@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="topupAmountList">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+
+    <string-array name="cloudTicketTabList">
+        <item>@string/cg_pre_get_ticket</item>
+        <item>@string/cg_without_pay</item>
+        <item>@string/cg_complete_order</item>
+        <item>@string/cg_canceled</item>
+        <item>@string/cg_refund</item>
+    </string-array>
+    <string-array name="Transaction_type">
+        <item>@string/transaction_all</item>
+        <item>@string/top_up_detail</item>
+        <item>@string/consume_detail</item>
+    </string-array>
+    <string-array name="arrayPost">
+        <item>我发表的</item>
+        <item>我回复的</item>
+    </string-array>
+    <string-array name="arrayDiscussion">
+        <item>最新回复</item>
+        <item>最新发布</item>
+        <item>精华</item>
+    </string-array>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EEEEEE"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_tab_item_height"
+            android:background="@color/EEEEEE"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/arc_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/service_detail_type_margin_top"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cardnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/my_detail_card_number_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/service_detail_changsha_txt_margin_top"
+                    android:gravity="center"
+                    android:text="@string/changsha_store_ticket"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/my_detail_changsha_store_ticket"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/service_detail_balance_margin_top_small"
+                    android:layout_marginTop="@dimen/service_detail_balance_margin_top_small"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/service_detail_arc_width4"
+                        android:layout_height="@dimen/service_detail_arc_width4">
+
+                        <com.whl.client.view.ArcProgress
+                            android:layout_width="@dimen/service_detail_arc_width4"
+                            android:layout_height="@dimen/service_detail_arc_width4"
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.601"
+                            app:arc_finished_color="@color/un_finished_colors"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke1"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_unfinished_color="@color/un_finished_colors"/>
+
+                        <com.whl.client.view.ArcProgress
+                            android:id="@+id/balance_progress"
+                            android:layout_width="@dimen/service_detail_arc_width2"
+                            android:layout_height="@dimen/service_detail_arc_width2"
+                            android:layout_gravity="center"
+
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.62"
+                            app:arc_draw_text="true"
+                            app:arc_finished_color="@color/un_finished_colors"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke2"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_text_size="@dimen/service_detail_arc_text_size"
+                            app:arc_unfinished_color="@color/finished_colors"/>
+
+                        <com.whl.client.view.ArcProgress
+                            android:layout_width="@dimen/service_detail_arc_width1"
+                            android:layout_height="@dimen/service_detail_arc_width1"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.78"
+                            app:arc_finished_color="@color/un_finished_colors"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke1"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_unfinished_color="@color/un_finished_colors"/>
+
+                        <TextView
+                            android:id="@+id/tv_balance_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="@string/store_card_balance"
+                            android:textColor="@color/_333333"
+                            android:textSize="@dimen/service_detail_balance_text_size"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="@dimen/service_detail_arc_width4"
+                        android:layout_height="@dimen/service_detail_arc_width4"
+                        android:layout_marginLeft="@dimen/service_detail_arc_block_horizontal">
+
+                        <com.whl.client.view.ArcProgress
+                            android:layout_width="@dimen/service_detail_arc_width4"
+                            android:layout_height="@dimen/service_detail_arc_width4"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.601"
+                            app:arc_finished_color="@color/finished_colors_green"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke1"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_unfinished_color="@color/finished_colors_green"/>
+
+                        <com.whl.client.view.ArcProgress
+                            android:id="@+id/available_progress"
+                            android:layout_width="@dimen/service_detail_arc_width2"
+                            android:layout_height="@dimen/service_detail_arc_width2"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.62"
+                            app:arc_draw_text="true"
+                            app:arc_finished_color="@color/finished_colors"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke2"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_text_size="@dimen/service_detail_arc_text_size"
+                            app:arc_unfinished_color="@color/finished_colors_green"/>
+
+                        <com.whl.client.view.ArcProgress
+                            android:layout_width="@dimen/service_detail_arc_width1"
+                            android:layout_height="@dimen/service_detail_arc_width1"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            app:arc_angle_offset="0.78"
+                            app:arc_finished_color="@color/finished_colors_green"
+                            app:arc_stroke_width="@dimen/service_detail_arc_stroke1"
+                            app:arc_text_color="@color/_797979"
+                            app:arc_unfinished_color="@color/finished_colors_green"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="@string/available_amount"
+                            android:textColor="@color/_333333"
+                            android:textSize="@dimen/service_detail_balance_text_size"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gray_block"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/arc_view"
+                android:background="@color/E0E0E0"
+                android:orientation="horizontal"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_up_amount_margin_top_small"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_amount"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/available_balance_text_size"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/available_balance_bg_line"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_selected_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/available_balance_text_size"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/my_service_transit_bg"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.whl.client.view.MyGridView
+                android:id="@+id/gv_ticket_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/balance_grid_item_margin_left"
+                android:layout_marginRight="@dimen/balance_grid_item_margin_left"
+                android:layout_marginTop="@dimen/top_up_amount_margin_top_small"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:horizontalSpacing="19dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="18dp">
+            </com.whl.client.view.MyGridView>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/register_btn_height"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:layout_marginTop="@dimen/top_up_submit_btn_margin_top"
+                android:background="@drawable/selector_login_btn"
+                android:gravity="center"
+                android:text="@string/btn_submit"
+                android:textColor="@color/color_title_text"
+                android:textSize="@dimen/login_btn_size"/>
+
+            <TextView
+                android:id="@+id/transit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/service_detail_transaction_txt_margin_top"
+                android:text="@string/transaction_record"
+                android:textColor="@color/FCA32A"
+                android:textSize="@dimen/service_detail_transaction_txt_size"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

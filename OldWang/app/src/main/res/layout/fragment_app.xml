@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_title_bg">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/title_bar_back_margin_left"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_home_presonal"/>
+
+                    <ImageView
+                        android:id="@+id/img_badge"
+                        android:layout_width="@dimen/home_badge_width"
+                        android:layout_height="@dimen/home_badge_width"
+                        android:layout_gravity="right|top"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/shape_dot"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="2dp"
+                android:text="@string/metro_map"
+                android:textColor="@color/color_title_text"
+                android:textSize="@dimen/title_bar_title_size"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/rlv_switch_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_book_by_station"
+                    android:gravity="center"
+                    android:text="@string/station"
+                    android:textColor="@color/nav_nor"
+                    android:textSize="@dimen/st_nav_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ticket_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_station"
+                    android:background="@drawable/selector_book_by_price"
+                    android:gravity="center"
+                    android:text="@string/ticket_price"
+                    android:textColor="@color/nav_nor"
+
+                    android:textSize="@dimen/st_nav_text_size"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:gravity="left|center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_location"/>
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/st_location_text_size"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:id="@+id/lly_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.whl.client.view.HomeTabIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_shadow"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

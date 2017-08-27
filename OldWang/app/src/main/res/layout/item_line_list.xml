@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lly_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/F0F0F0"
+            android:clickable="false"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/round_margin_left"
+                android:layout_marginTop="@dimen/line_listview_margintop"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <com.whl.client.view.CircleTextImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="@dimen/line_circle_img_height"
+                    android:layout_height="@dimen/line_circle_img_height"
+                    app:citv_border_color="@android:color/white"
+                    app:citv_border_width="1dp"
+                    app:citv_fill_color="#50555D"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="@dimen/buy_ticket_by_station_line_text_padding"
+                    app:citv_text_size="@dimen/buy_ticket_by_station_line_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_line_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/st_line_name_margin_left"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/st_line_name_size"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_start_end_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/line_station_margintop"
+                android:layout_marginLeft="@dimen/start_end_margin_left"
+                android:layout_marginTop="@dimen/st_line_start_name_margin_top"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/select_line_station_info"
+                android:textSize="@dimen/st_line_start_end_size"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:src="@color/CCCCCC"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_arrow_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SingleTicketOrderDetailBgStyle"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/common_margin_right"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:src="@color/st_order_detail_line"/>
+
+    <RelativeLayout
+        style="@style/SingleTicketOrderDetailBgStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/common_margin_right"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/st_order_detail_height2"
+                android:layout_marginTop="@dimen/st_order_detail_margin_top">
+
+                <TextView
+                    android:id="@+id/start"
+                    style="@style/SingleTicketOrderOrderDetailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:text="@string/st_order_detail_start"
+                    android:textSize="@dimen/st_order_detail_textsize3"/>
+
+                <TextView
+                    android:id="@+id/tv_start_line_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/st_order_detail_margin_left"
+                    android:layout_toRightOf="@+id/start"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/tv_start_station_name"
+                    style="@style/SingleTicketOrderOrderDetailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/st_order_detail_margin_left2"
+                    android:layout_toRightOf="@+id/tv_start_line_name"
+                    android:text="@string/st_order_detail_start"
+                    android:textSize="@dimen/st_order_detail_textsize4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/st_order_detail_height2"
+                android:layout_marginBottom="@dimen/st_order_detail_margin_top"
+                android:layout_marginTop="@dimen/st_order_detail_margin_top">
+
+                <TextView
+                    android:id="@+id/end"
+                    style="@style/SingleTicketOrderOrderDetailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/st_order_detail_end"
+                    android:textSize="@dimen/st_order_detail_textsize3"/>
+
+                <TextView
+                    android:id="@+id/tv_end_line_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/st_order_detail_margin_left"
+                    android:layout_toRightOf="@+id/end"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/tv_end_station_name"
+                    style="@style/SingleTicketOrderOrderDetailTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/st_order_detail_margin_left2"
+                    android:layout_toRightOf="@+id/tv_end_line_name"
+                    android:text="@string/st_order_detail_start"
+                    android:textSize="@dimen/st_order_detail_textsize4"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_one_ticket_price"
+            style="@style/SingleTicketOrderOrderDetailTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:text="4"
+            android:textSize="@dimen/st_order_detail_textsize2"/>
+    </RelativeLayout>
+
+</LinearLayout>

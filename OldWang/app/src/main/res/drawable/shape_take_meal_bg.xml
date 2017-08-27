@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 边框颜色值 -->
+    <!--<item>-->
+    <!--<shape>-->
+    <!--<solid android:color="@color/coffee_gray" />-->
+
+    <!--<corners-->
+    <!--android:bottomLeftRadius="@dimen/coffee_taste_dialog_radius"-->
+    <!--android:bottomRightRadius="@dimen/coffee_taste_dialog_radius" >-->
+    <!--</corners>-->
+    <!--</shape>-->
+    <!--</item>-->
+    <!-- 主体背景颜色值 -->
+    <item
+        >
+        <shape>
+            <solid android:color="@color/FFFFFF"/>
+
+            <corners
+                android:bottomLeftRadius="@dimen/order_coffee_radius"
+                android:bottomRightRadius="@dimen/order_coffee_radius"
+                android:topLeftRadius="@dimen/order_coffee_radius"
+                android:topRightRadius="@dimen/order_coffee_radius"/>
+        </shape>
+    </item>
+
+</layer-list>

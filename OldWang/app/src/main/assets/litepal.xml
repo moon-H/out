@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="shankephone"></dbname>
+
+    <version value="31"></version>
+
+    <list>
+        <mapping class="com.whl.client.gateway.model.spservice.Service"></mapping>
+        <mapping class="com.whl.client.gateway.model.singleticket.CityCode"></mapping>
+        <mapping class="com.whl.client.gateway.model.singleticket.StationCode"></mapping>
+        <mapping class="com.whl.client.gateway.model.singleticket.LineCode"></mapping>
+        <mapping class="com.whl.client.gateway.model.wristband.Device"></mapping>
+        <mapping class="com.whl.client.gateway.model.singleticket.MetroMap"></mapping>
+        <mapping class="com.whl.client.gateway.model.singleticket.HceTicket"></mapping>
+        <mapping class="com.whl.client.gateway.model.Affiche"></mapping>
+        <mapping class="com.whl.client.gateway.model.spservice.ServiceCity"></mapping>
+        <mapping class="com.whl.client.gateway.model.ProductCategory"></mapping>
+        <mapping class="com.whl.client.gateway.model.order.ProductStatus"></mapping>
+        <mapping class="com.whl.client.gateway.model.coffee.ShopCartGoodsTB"></mapping>
+    </list>
+</litepal>

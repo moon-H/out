@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_choose_taste_dialog_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/coffee_taste_common_marin_top2"
+            android:textColor="@color/coffee__333333"
+            android:textSize="@dimen/coffee_taste_text_size2"/>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/coffee_taste_common_marin_top"
+            android:layout_marginTop="@dimen/coffee_taste_common_marin_top"
+            android:src="@drawable/icon_taste_close"/>
+
+        <LinearLayout
+            android:id="@+id/lly_taste_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/coffee_taste_common_marin_top"
+            android:gravity="center"
+            android:orientation="vertical"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coffee_taste_btn_height"
+            android:layout_below="@+id/lly_taste_parent"
+            android:layout_marginTop="@dimen/coffee_taste_btn_margin_top"
+            android:background="@drawable/shape_choose_taste_dialog"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/coffee_taste_amount_txt_margin_left"
+                android:textColor="@color/coffee_FF4C0D"
+                android:textSize="@dimen/coffee_taste_amount_txt_size"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/coffee_taste_add_sp_cart_margin_right">
+
+                <TextView
+                    android:id="@+id/btn_add_shopping_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_add_shopping_cart_long"
+                    android:gravity="center"
+                    android:text="@string/coffee_add_shop_car"
+                    android:textColor="@color/FFFFFF"
+                    android:textSize="@dimen/coffee_taste_add_sp_cart"/>
+
+                <LinearLayout
+                    android:id="@+id/lly_add_shopping_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_count_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_shopping_cart_minus"/>
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/coffee_taste_add_sp_cart_btn_hr_margin"
+                        android:layout_marginRight="@dimen/coffee_taste_add_sp_cart_btn_hr_margin"
+                        android:textColor="@color/coffee__333333"
+                        android:textSize="@dimen/coffee_taste_goods_count_txt_size"/>
+
+                    <ImageView
+                        android:id="@+id/img_count_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_shopping_cart_add"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

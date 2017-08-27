@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_cancle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/login_close"
+                        android:layout_marginTop="@dimen/login_close"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_login_cancle"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_login"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_login_top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_input"
+                    android:layout_marginRight="@dimen/login_input"
+                    android:layout_marginTop="@dimen/login_input_margin_top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.whl.client.view.ClearEditText
+                            android:id="@+id/edt_phone_number"
+                            style="@style/ClearEdtCommonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/verify_input_phone"
+                            android:inputType="number"
+                            android:textColorHint="@color/login_hint_color"
+                            app:showTruth="false"/>
+
+                        <TextView
+                            android:id="@+id/tv_get_verify_code"
+                            android:layout_width="@dimen/get_verify_code_btn_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_login_btn"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="@dimen/person_edit_padding_left2"
+                            android:text="@string/get_verify_code"
+                            android:textColor="@color/color_title_text"
+                            android:textSize="@dimen/get_verify_code_size"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/service_detail_arc_stroke1"
+                        android:background="@color/search_view_edit_textcolor"/>
+
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_verify_code"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/edt_vertical_space"
+                        android:hint="@string/verify_input_code"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/search_view_edit_textcolor"/>
+
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_password"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/edt_vertical_space"
+                        android:hint="@string/set_login_pwd"
+                        android:inputType="textPassword"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/search_view_edit_textcolor"/>
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_confirm_password"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/edt_vertical_space"
+                        android:hint="@string/confirm_login_pwd"
+                        android:inputType="textPassword"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/search_view_edit_textcolor"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <LinearLayout
+                            android:id="@+id/lly_clause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chk_user_tnc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_rember_pwd"
+                                android:checked="true"/>
+
+                            <TextView
+                                style="@style/login_text_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/login_remember_margin_left"
+                                android:text="@string/user_tnc"
+                                android:textColor="@color/conn_bracelet_text"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                style="@style/login_text_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/login_remember_margin_left"
+                                android:text="@string/user_tnc_total"
+                                android:textColor="@color/register_tnc"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/register_btn_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/common_margin_bottom"
+                        android:layout_marginTop="@dimen/service_detail_img_margin_top"
+                        android:background="@drawable/selector_login_btn"
+                        android:gravity="center"
+                        android:text="@string/register"
+                        android:textColor="@color/color_title_text"
+                        android:textSize="@dimen/login_btn"/>
+
+                    <TextView
+                        android:id="@+id/tv_turn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/login"
+                        android:textColor="@color/login_page_text_color"
+                        android:textSize="@dimen/login_btn"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progressView"
+        layout="@layout/progressbar_inverse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</FrameLayout>

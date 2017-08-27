@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.whl.client.view.metro.MapLayout
+        android:id="@+id/layout_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.cssweb.shankephone.tileview.TileView
+            android:id="@+id/metro_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.whl.client.view.metro.MapLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/st_map_station_margin_top2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/lly_select_station"
+            android:layout_width="@dimen/map_select_station_width"
+            android:layout_height="@dimen/st_map_select_station_height"
+            android:layout_marginLeft="@dimen/map_select_station_margin_left"
+            android:alpha="0.9"
+            android:background="@drawable/bg"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/map_start_icon_margin_left"
+                android:layout_marginTop="@dimen/map_common_margin_top"
+                android:src="@drawable/start"/>
+
+            <TextView
+                android:id="@+id/tv_start_station"
+                android:layout_width="@dimen/st_start_end_station_width"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img_start"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/st_map_select_station_pading_left"
+                android:paddingTop="@dimen/map_common_margin_to2"
+                android:text="@string/st_start_station2"
+                android:textColor="@color/select_station_hint"
+                android:textSize="@dimen/st_price_hint_text_size"/>
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/st_map_img_margin_left"
+                android:layout_marginRight="@dimen/st_map_img_margin_left"
+                android:layout_marginTop="@dimen/map_common_margin_to2"
+                android:layout_toRightOf="@+id/tv_start_station"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_home_arrive"/>
+
+            <ImageView
+                android:id="@+id/img_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/map_end_icon_margin_left"
+                android:layout_marginTop="@dimen/map_common_margin_top"
+                android:layout_toRightOf="@+id/img_arrow"
+                android:src="@drawable/end"/>
+
+            <TextView
+                android:id="@+id/tv_end_station"
+                android:layout_width="@dimen/st_start_end_station_width"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/img_end"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/st_map_select_station_pading_left"
+                android:paddingTop="@dimen/map_common_margin_to2"
+                android:text="@string/st_end_station"
+                android:textColor="@color/select_station_hint"
+                android:textSize="@dimen/st_price_hint_text_size"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="@dimen/st_select_station_height"
+            android:layout_height="@dimen/st_map_select_station_height"
+            android:layout_gravity="top|right"
+            android:layout_marginLeft="@dimen/st_switch_btn_margin_left"
+            android:layout_marginRight="@dimen/st_switch_btn_margin_right"
+            android:background="@drawable/bg_piaojia"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/st_switch_btn_margin_top"
+            android:text="@string/price"
+            android:textSize="@dimen/st_switch_btn_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_affiche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/home_broadcast_img_margin_left"
+        android:background="@drawable/home_broadcast_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/home_broadcast_img_margin_left"
+        android:paddingRight="@dimen/home_broadcast_img_margin_left"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_broadcast"/>
+
+        <TextView
+            android:id="@+id/tv_affiche"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_broadcast_txt_margin_left"
+            android:layout_weight="1"
+            android:textColor="@color/_293F6B"
+            android:textSize="@dimen/home_broadcast_txt_size"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="@dimen/home_broadcast_img_width"
+            android:layout_height="@dimen/home_broadcast_img_width"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_home_broadcast_delete"/>
+    </LinearLayout>
+    <!--android:layout_marginRight="@dimen/home_broadcast_delete_img_margin"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/home_icon_hr_margin"
+        android:layout_marginRight="@dimen/home_icon_hr_margin"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_journey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_journey"/>
+
+            <ImageView
+                android:id="@+id/img_badge"
+                android:layout_width="@dimen/home_badge_width"
+                android:layout_height="@dimen/home_badge_width"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="@dimen/journey_badge_margin"
+                android:layout_marginTop="@dimen/journey_badge_margin"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shape_dot"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_icon_vt_margin"
+            android:src="@drawable/selector_customer_service"/>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/skf_start">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skf_start"/>
+
+    <ImageView
+        android:id="@+id/img_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:layout_marginTop="@dimen/common_margin_right"
+        android:alpha="0.5"
+        android:paddingLeft="@dimen/common_margin_horizontal"
+        android:paddingRight="@dimen/common_margin_horizontal"
+        android:text="@string/skip"
+        android:textSize="@dimen/skip_btn_txt_size"
+        android:visibility="gone"/>
+</FrameLayout>

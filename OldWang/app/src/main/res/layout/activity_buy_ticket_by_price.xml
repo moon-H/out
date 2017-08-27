@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/FAF8F5"
+              android:orientation="vertical">
+
+    <com.whl.client.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="true"/>
+
+    <LinearLayout
+        android:id="@+id/lly_fragment_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_ticket_by_station_title_height"
+        android:background="@color/FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qrcode_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/st_qrcode_ticket"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/buy_ticket_by_station_nav_text_size"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_qrcode_ticket_line"
+                android:layout_width="@dimen/buy_ticket_by_station_nav_line_width"
+                android:layout_height="@dimen/buy_ticket_by_station_nav_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/FF9605"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_common_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/st_common_ticket"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/buy_ticket_by_station_nav_text_size"
+                />
+
+            <ImageView
+                android:id="@+id/img_common_ticket_line"
+                android:layout_width="@dimen/buy_ticket_by_station_nav_line_width"
+                android:layout_height="@dimen/buy_ticket_by_station_nav_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/FF9605"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lly_buy_ticket_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/buy_ticket_by_station_block_margin_top1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+</LinearLayout>

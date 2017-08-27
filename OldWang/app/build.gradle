@@ -1,0 +1,308 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+8"))
+}
+
+def appName() {
+    return "whl"
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+
+//        开发
+        buildConfigField 'String', 'WALLET_SERVER_URL', '"http://120.52.9.6:8980/corpay/ci"'
+        //开发论坛
+        buildConfigField 'String', 'BBS_SERVER_URL', '"http://120.52.9.6:8580/bbsserver/ci"'
+        // 用户头像 开发环境
+        buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.6:8980/corpay/ci"'
+        //用户头像 生产环境
+//        buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.11:18180/corpay/ci"'
+        //咖啡服务器
+        buildConfigField 'String', 'COFFEE_SERVER_URL', '"http://114.255.78.33:18080/coffe"'
+
+        buildConfigField 'String', 'WALLET_ID_CHECK_UPDATE', '"000001"'//默认walletID
+        buildConfigField 'String', 'WALLET_ID', '"000001"'//默认walletID
+
+        applicationId "com.whl.client"
+        minSdkVersion 14
+        targetSdkVersion 19
+        multiDexEnabled true// dex突破65535的限制
+        manifestPlaceholders = [CHANNEL_VALUE: "HomePage"] // 默认是主页的渠道
+
+        //开发
+        versionCode 400
+        versionName "4.0.1.0_DEV"
+
+        //预生产
+//        versionCode 320
+//        versionName "3.2.0-8_UAT"
+
+        //生产
+//        versionCode 332
+//        versionName "3.3.2"
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "nKehPCG7FI666CEJcCvf44",
+                GETUI_APP_KEY   : "eNUgeAdsqZ7cfaMC5P5gl2",
+                GETUI_APP_SECRET: "4IPv4HOlub9BMRiImHA871",
+        ]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("whl.jks")
+            storePassword "whl888888"
+            keyAlias "key0"
+            keyPassword "whl666666"
+        }
+
+        debug {
+            // No debug config
+//            storeFile file("debug.keystore")
+            //-------------
+            storeFile file("whl.jks")
+            storePassword "whl888888"
+            keyAlias "key0"
+            keyPassword "whl666666"
+        }
+
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "TOPUP_AMOUNT_FLAG", "true"
+            buildConfigField "boolean", "TEST_PAY", "false"//调用自定义的支付
+
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [CHANNEL_VALUE: "HomePage"]
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'debug'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "${appName()}_${defaultConfig.versionName}_${releaseTime()}_${variant.flavorName}_${variant.buildType.name}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "nKehPCG7FI666CEJcCvf44",
+                    GETUI_APP_KEY   : "eNUgeAdsqZ7cfaMC5P5gl2",
+                    GETUI_APP_SECRET: "4IPv4HOlub9BMRiImHA871",
+            ]
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "TOPUP_AMOUNT_FLAG", "false"
+            buildConfigField 'String', 'WALLET_SERVER_URL', '"https://www.shankephone.com:8180/corpay/ci"'
+            buildConfigField 'String', 'BBS_SERVER_URL', '"http://push.shankephone.com:8380/bbsserver/ci"'
+            buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.11:18180/corpay/ci"'//用户头像
+            buildConfigField "boolean", "TEST_PAY", "false"
+
+
+            minifyEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'release'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "${appName()}_${variant.versionName}_${releaseTime()}_${variant.flavorName}_${variant.buildType.name}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "ndUYqWvMXi70BRtA1H2z41",
+                    GETUI_APP_KEY   : "nCJIhm7MzX6vSRgzKaOuS2",
+                    GETUI_APP_SECRET: "tc3Jz4iAMt9rn7dNXQHAb7",
+            ]
+        }
+
+        releaseLog {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "TOPUP_AMOUNT_FLAG", "true"
+            buildConfigField 'String', 'WALLET_SERVER_URL', '"https://www.shankephone.com:8180/corpay/ci"'
+            buildConfigField 'String', 'BBS_SERVER_URL', '"http://push.shankephone.com:8380/bbsserver/ci"'
+            buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.11:18180/corpay/ci"'//用户头像
+            buildConfigField "boolean", "TEST_PAY", "false"
+
+            minifyEnabled true
+            shrinkResources true  // 移除无用的resource文件
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'releaseLog'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "${appName()}_${variant.versionName}_${releaseTime()}_${variant.flavorName}_${variant.buildType.name}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "ndUYqWvMXi70BRtA1H2z41",
+                    GETUI_APP_KEY   : "nCJIhm7MzX6vSRgzKaOuS2",
+                    GETUI_APP_SECRET: "tc3Jz4iAMt9rn7dNXQHAb7",
+                    PACKAGE_NAME    : "com.cssweb.shankephone"
+            ]
+        }
+
+        uat {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "TOPUP_AMOUNT_FLAG", "true"
+            buildConfigField 'String', 'WALLET_SERVER_URL', '"http://120.52.9.7:8180/corpay/ci"'
+            buildConfigField 'String', 'BBS_SERVER_URL', '"http://120.52.9.6:8580/bbsserver/ci"'
+            buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.7:8180/corpay/ci"'//用户头像
+            buildConfigField "boolean", "TEST_PAY", "false"
+
+            minifyEnabled true
+            shrinkResources true // 移除无用的resource文件
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'uat'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "${appName()}_${variant.versionName}_${releaseTime()}_${variant.flavorName}_${variant.buildType.name}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "JH5sMPkgFA8Wk12jiUVhDA",
+                    GETUI_APP_KEY   : "N9yZo81vOc605tpKHD4ox7",
+                    GETUI_APP_SECRET: "8zXpxWDtegAUjS2zbdmwp4",
+            ]
+        }
+
+        dev {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "TOPUP_AMOUNT_FLAG", "true"
+            //开发环境
+            buildConfigField 'String', 'WALLET_SERVER_URL', '"http://120.52.9.6:8980/corpay/ci"'
+            //10楼演示环境
+//            buildConfigField 'String', 'WALLET_SERVER_URL', '"http://120.52.139.101:8180/corpay/ci"'
+            buildConfigField 'String', 'BBS_SERVER_URL', '"http://120.52.9.6:8580/bbsserver/ci"'
+            buildConfigField 'String', 'USER_HEAD_URL', '"http://120.52.9.6:8980/corpay/ci"'//用户头像
+            buildConfigField "boolean", "TEST_PAY", "true"
+
+            minifyEnabled true
+            shrinkResources true // 移除无用的resource文件
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'dev'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "${appName()}_${variant.versionName}_${releaseTime()}_${variant.flavorName}_${variant.buildType.name}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "nKehPCG7FI666CEJcCvf44",
+                    GETUI_APP_KEY   : "eNUgeAdsqZ7cfaMC5P5gl2",
+                    GETUI_APP_SECRET: "4IPv4HOlub9BMRiImHA871",
+            ]
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+    productFlavors {
+        HomePage {
+            buildConfigField 'String', 'WALLET_ID_CHECK_UPDATE', '"000001"'
+        }
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'commons-codec:commons-codec:1.4'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.getui:sdk:2.9.5.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile files('libs/AMap_Search_V5.0.0_20170309.jar')
+    //订单列表 tabLayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //coffee
+    compile('com.google.android:flexbox:0.3.0') {
+        exclude group: 'com.android.support'
+    }
+    compile project(':mFramework')
+    compile project(':recyclerLibrary')
+    compile project(':slidelibrary')
+}

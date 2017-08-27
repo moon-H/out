@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.whl.client.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/entry_success_btn_margin_top"
+        android:src="@drawable/icon_station"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/pay_success_line_width"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pay_success_line_margin_left"
+            android:text="@string/st_cg_ticket_title"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/pay_success_title_text_size"/>
+
+        <ImageView
+            android:layout_width="@dimen/pay_success_line_width"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/pay_success_line_margin_left"
+            android:background="@color/CCCCCC"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/entry_success_btn_margin_top3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lable_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_number"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:layout_toRightOf="@+id/lable_order_number"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/pay_success_text_size1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/st_start_station"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:layout_toRightOf="@id/tv_start_label"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.whl.client.view.RoundLineNameView
+                android:id="@+id/tv_start_line_name"
+                android:layout_width="@dimen/buy_ticket_by_station_line_text_width"
+                android:layout_height="@dimen/buy_ticket_by_station_line_text_width"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/st_order_line_name_size"/>
+
+            <TextView
+                android:id="@+id/tv_start_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/pay_success_text_size3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_end_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/st_end_station2"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:layout_toRightOf="@+id/tv_end_label"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.whl.client.view.RoundLineNameView
+                android:id="@+id/tv_end_line_name"
+                android:layout_width="@dimen/buy_ticket_by_station_line_text_width"
+                android:layout_height="@dimen/buy_ticket_by_station_line_text_width"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/st_order_line_name_size"/>
+
+            <TextView
+                android:id="@+id/tv_end_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/pay_success_text_size3"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lly_actual_exit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_actual_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/exit_gate_station"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/entry_success_actual_exit_station_text_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:layout_toRightOf="@+id/tv_actual_end"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.whl.client.view.RoundLineNameView
+                android:id="@+id/tv_actual_end_line_name"
+                android:layout_width="@dimen/buy_ticket_by_station_line_text_width"
+                android:layout_height="@dimen/buy_ticket_by_station_line_text_width"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/st_order_line_name_size"/>
+
+            <TextView
+                android:id="@+id/tv_actual_end_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/pay_success_text_size3"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_label_entry_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/entry_gate_time"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+
+        <TextView
+            android:id="@+id/tv_entry_gate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:layout_toRightOf="@+id/tv_label_entry_time"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_exit_gate_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+        android:layout_marginTop="@dimen/pay_success_text_margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_gate_time"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+
+        <TextView
+            android:id="@+id/tv_exit_gate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/pay_success_text_size1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/NewConfirmBtnStyle"
+        android:layout_marginTop="@dimen/entry_success_btn_margin_top3"/>
+</LinearLayout>

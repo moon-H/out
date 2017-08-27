@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/upgrade_dialog_width"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/common_margin_left"
+              android:layout_marginRight="@dimen/common_margin_right"
+              android:background="@drawable/rectangle_dialog_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/upgrade_dialog_img_margin_top"
+            android:src="@drawable/icon_uodate_logo"/>
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/upgrade_dialog_title_margin_top"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/find_new_version"
+            android:textColor="@color/_595959"
+            android:textSize="@dimen/upgrade_dialog_title_txt_size"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/upgrade_dialog_version_margin"
+        android:layout_marginTop="@dimen/upgrade_dialog_version_margin_top"
+        android:gravity="end"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/upgrade_dialog_version_txt_size"/>
+
+    <EditText
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_dialog_content_margin"
+        android:layout_marginRight="@dimen/upgrade_dialog_content_margin"
+        android:layout_marginTop="@dimen/upgrade_dialog_content_margin_top"
+        android:background="@color/transparent"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:includeFontPadding="false"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:lineSpacingExtra="@dimen/upgrade_dialog_content_space"
+        android:maxLines="5"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/not_remind_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin_left_right"
+        android:layout_marginRight="@dimen/dialog_margin_left_right"
+        android:layout_marginTop="@dimen/common_margin_top2"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/check_not_remind"
+            android:layout_width="@dimen/upgrade_dialog_chk_width"
+            android:layout_height="@dimen/upgrade_dialog_chk_width"
+            android:background="@drawable/selector_rember_chk"
+            android:button="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_text_margin_checkbox"
+            android:text="@string/next_not_remind"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/upgrade_dialog_version_margin_top"
+        android:background="@color/E5E5E5"/>
+
+    <LinearLayout
+        android:id="@+id/two_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/upgrade_dialog_btn_height"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:includeFontPadding="false"
+            android:text="@string/update_ignore"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/upgrade_text_size"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/E5E5E5"/>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/upgrade_dialog_btn_height"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:includeFontPadding="false"
+            android:text="@string/update_now"
+            android:textColor="@color/dialog_line"
+            android:textSize="@dimen/upgrade_text_size"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="commands">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 余额 -->
+        <item>805C000204</item>
+        <!-- 卡号 -->
+        <item>00B095001E</item>
+        <!-- 交易记录 -->
+        <item>00B201C417</item>
+        <item>00B202C417</item>
+        <item>00B203C417</item>
+        <item>00B204C417</item>
+        <item>00B205C417</item>
+        <item>00B206C417</item>
+        <item>00B207C417</item>
+        <item>00B208C417</item>
+        <item>00B209C417</item>
+        <item>00B20AC417</item>
+        <!-- 充值记录 -->
+        <item>00B201D417</item>
+        <item>00B202D417</item>
+        <item>00B203D417</item>
+        <item>00B204D417</item>
+        <item>00B205D417</item>
+        <item>00B206D417</item>
+        <item>00B207D417</item>
+        <item>00B208D417</item>
+        <item>00B209D417</item>
+        <item>00B20AD417</item>
+    </string-array>
+
+    <string-array name="cardNumberAndBalancee">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 余额 -->
+        <item>805C000204</item>
+        <!-- 卡号 -->
+        <item>00B095001E</item>
+
+    </string-array>
+
+    <string-array name="transactionHist">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 交易记录 -->
+        <item>00B201C417</item>
+        <item>00B202C417</item>
+        <item>00B203C417</item>
+        <item>00B204C417</item>
+        <item>00B205C417</item>
+        <item>00B206C417</item>
+        <item>00B207C417</item>
+        <item>00B208C417</item>
+        <item>00B209C417</item>
+        <item>00B20AC417</item>
+    </string-array>
+
+    <string-array name="topUpHist">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 充值记录 -->
+        <item>00B201D417</item>
+        <item>00B202D417</item>
+        <item>00B203D417</item>
+        <item>00B204D417</item>
+        <item>00B205D417</item>
+        <item>00B206D417</item>
+        <item>00B207D417</item>
+        <item>00B208D417</item>
+        <item>00B209D417</item>
+        <item>00B20AD417</item>
+    </string-array>
+
+    <string-array name="AllTransactionHist">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 交易记录 -->
+        <item>00B201C417</item>
+        <item>00B202C417</item>
+        <item>00B203C417</item>
+        <item>00B204C417</item>
+        <item>00B205C417</item>
+        <item>00B206C417</item>
+        <item>00B207C417</item>
+        <item>00B208C417</item>
+        <item>00B209C417</item>
+        <item>00B20AC417</item>
+        <!-- 充值记录 -->
+        <item>00B201D417</item>
+        <item>00B202D417</item>
+        <item>00B203D417</item>
+        <item>00B204D417</item>
+        <item>00B205D417</item>
+        <item>00B206D417</item>
+        <item>00B207D417</item>
+        <item>00B208D417</item>
+        <item>00B209D417</item>
+        <item>00B20AD417</item>
+    </string-array>
+
+    <string-array name="topCondition">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 逻辑卡号 -->
+        <item>00B095001E</item>
+        <!-- 物理卡号 -->
+        <item>80CA000009</item>
+        <!-- 余额 -->
+        <item>805C000204</item>
+    </string-array>
+
+    <!-- 准备充值 -->
+    <string-array name="prepareTopup">
+        <!--<item>00A4040009A00000000386980700</item>-->
+        <!--<item>00A40000023F00</item>-->
+        <!--<item>00A40000023F01</item>-->
+        <!-- 验证pin -->
+        <item>0020000003123456</item>
+    </string-array>
+    <!-- 读余额 -->
+    <string-array name="getBalance">
+        <item>00A4040009A00000000386980700</item>
+        <item>00A40000023F00</item>
+        <item>00A40000023F01</item>
+        <!-- 余额 -->
+        <item>805C000204</item>
+    </string-array>
+</resources>

@@ -1,0 +1,184 @@
+<resources>
+
+    <color name="lightblack">#ff202020</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="green">#64d73c</color>
+    <color name="transparent">#00000000</color>
+    <color name="backgroud">#fafafa</color>
+    <color name="hint_color">#aaaaaa</color>
+    <!-- dialog -->
+    <color name="dialog_btn_bg">#ff9606</color>
+    <color name="dialog_line">#ff9606</color>
+    <!-- bottombar -->
+    <color name="bottom_bar_bg">#eeeeee</color>
+    <color name="bottom_text_nor">#666666</color>
+    <color name="bottom_bg_selected">#ff9605</color>
+    <color name="bottom_bg_nor">#f5f5f5</color>
+    <!-- title -->
+    <color name="color_title_text">#FFFFFF</color>
+    <color name="color_title_bg">#ff9606</color>
+    <!-- about -->
+    <color name="about_app_name">#696969</color>
+    <color name="about_app_version">#999999</color>
+    <color name="about_copyright">#a0a0a0</color>
+    <color name="about_tel">#197dcd</color>
+    <!-- login -->
+    <color name="login_hint_color">#aaaaaa</color>
+    <color name="login_page_text_color">#ff9605</color>
+    <color name="login_input_text_color">#696969</color>
+    <color name="login_btn_nor">#ff9605</color>
+    <color name="login_btn_press">#ea8c04</color>
+    <color name="get_verify_code_gray">#fdd37d</color>
+    <!-- home -->
+    <color name="grid_item_press">#f5f5f5</color>
+    <!-- search_view -->
+    <color name="search_view_edit_textcolor">#cccccc</color>
+    <color name="search_listview_divider">#ffcccccc</color>
+    <color name="service_list_item_title">#ff333333</color>
+    <color name="service_list_item_info">#ff696969</color>
+    <!-- resist -->
+    <color name="message_list_title_color">#333333</color>
+    <color name="message_detail_divider_color">#aaaaaa</color>
+    <color name="message_date_color">#696969</color>
+    <!-- My service detail -->
+    <color name="my_service_detail_title_text">#333333</color>
+    <color name="my_service_detail_title_bg">#cecece</color>
+    <color name="my_service_detail_item_type_topup">#50b400</color>
+    <color name="my_service_detail_item_amount">#ff5a00</color>
+    <color name="my_service_transit_bg">#b4b4b4</color>
+    <!-- checkpwd -->
+    <color name="check_pwd_btn_nor">#505050</color>
+    <color name="check_pwd_btn_press">#878787</color>
+    <color name="check_pwd_btn_text">#b4b4b4</color>
+    <color name="check_pwd_title">#ffffff</color>
+    <color name="check_pwd_line">#a5a5a5</color>
+    <!-- single ticket-->
+    <color name="line1">#FACE01</color>
+    <color name="line2">#008AD4</color>
+    <color name="line3">#FA4F1A</color>
+    <color name="line4">#63A332</color>
+    <color name="line5">#E40314</color>
+    <color name="line6">#A40081</color>
+    <color name="line8">#138C9A</color>
+    <color name="line_apm">#50C0EB</color>
+    <color name="line_gf">#B6CE57</color>
+    <color name="line_3_north">#EE8101</color>
+    <color name="line_cxf">#EE8101</color>
+    <color name="nav_nor">#FFFFFF</color>
+    <color name="select_station_hint">#999999</color>
+    <color name="select_station_bg">#F0F0F0</color>
+    <color name="select_station_bg_selected">#e0e0e0</color>
+    <color name="select_line_station_info">#999999</color>
+    <color name="select_line_station_name">#333333</color>
+    <color name="select_spannable_string">#3D9CCE</color>
+    <color name="select_result_line">#CBBBB4</color>
+    <color name="select_result_linename">#FFFFFF</color>
+    <color name="st_order_text_nor">#333333</color>
+    <color name="st_order_text_selected">#FF9605</color>
+    <color name="st_order_price_text">#333333</color>
+    <color name="st_total_price_text">#D00000</color>
+    <color name="st_order_item_status1">#FF9605</color>
+    <color name="st_order_item_status2">#E14343</color>
+    <color name="st_order_item_status3">#5BB0E0</color>
+    <color name="st_order_item_status4">#31B954</color>
+    <color name="st_order_item_status5">#7386E6</color>
+    <color name="st_order_item_text">#333333</color>
+    <color name="st_city_item_text">#333333</color>
+    <color name="st_order_detail_text1">#333333</color>
+    <color name="st_order_detail_line">#E0E0E0</color>
+    <color name="st_order_detail_bg">#F7F7F7</color>
+    <color name="FAFAFA">#FAFAFA</color>
+    <color name="_2CA855">#2CA855</color>
+    <color name="EF3A3A">#EF3A3A</color>
+    <color name="CBCBCB">#CBCBCB</color>
+    <color name="F0F0F0">#F0F0F0</color>
+    <color name="F7F7F7">#F7F7F7</color>
+    <color name="FF9605">#FF9605</color>
+    <color name="FD0001">#FD0001</color>
+    <color name="F6F6F6">#F6F6F6</color>
+    <color name="FFFFFF">#FFFFFF</color>
+    <color name="E14343">#E14343</color>
+    <color name="_666666">#666666</color>
+    <color name="E5E5E5">#E5E5E5</color>
+    <color name="_333333">#333333</color>
+    <!-- wristband service detail -->
+    <color name="pull_to_refresh_loading_text">#999999</color>
+    <color name="conn_bracelet_text">#666666</color>
+    <color name="record_bracelet_text">#FE6005</color>
+    <color name="wristband_order_item_order_id_color">#4D4D4D</color>
+    <color name="wristband_order_item_order_status_color">#5fbad7</color>
+    <color name="wristband_order_item_order_amount_color">#dd3a31</color>
+    <!-- order -->
+    <color name="order_bg">#F4F4F4</color>
+    <color name="order_text">#4D4D4D</color>
+    <color name="register_tnc">#566B96</color>
+    <color name="_41B2D8">#41B2D8</color>
+    <color name="CCCCCC">#CCCCCC</color>
+    <color name="BBBBBB">#BBBBBB</color>
+    <color name="F5F5F5">#F5F5F5</color>
+    <color name="_797979">#797979</color>
+    <color name="E0E0E0">#E0E0E0</color>
+    <color name="_603D0D">#603D0D</color>
+    <color name="DFDFDF">#DFDFDF</color>
+    <color name="_1BBC9D">#1BBC9D</color>
+    <color name="FDCC06">#FDCC06</color>
+    <color name="FCAC3A">#FCAC3A</color>
+    <color name="_9A58B9">#9A58B9</color>
+    <color name="_60ACE0">#60ACE0</color>
+    <color name="EDEDED">#EDEDED</color>
+    <color name="EEEEEE">#EEEEEE</color>
+    <color name="FCA32A">#FCA32A</color>
+    <color name="CACACA">#CACACA</color>
+    <color name="C7C7C7">#C7C7C7</color>
+
+
+    <color name="finished_colors">#E6E6E6</color>
+    <color name="un_finished_colors">#FDB34D</color>
+    <color name="finished_colors_green">#8ED7FD</color>
+    <color name="social_login_text">#9A9A9A</color>
+
+    <color name="bg_item">#efefef</color>
+    <color name="bg_line">#FFA224</color>
+    <color name="pop_line">#c5b3ab</color>
+    <!--bbs start-->
+    <color name="personal_edit_bg">#f9f9f9</color>
+    <color name="personal_edit_line_color">#cccccc</color>
+    <color name="post_date_text_color">#999999</color>
+    <color name="line_color">#666666</color>
+
+    <!--bbs end-->
+    <color name="_999999">#999999</color>
+
+    <color name="_293F6B">#293F6B</color>
+    <color name="_696969">#696969</color>
+    <color name="_595959">#595959</color>
+    <color name="_D2D2D2">#D2D2D2</color>
+    <color name="EFEFEF">#EFEFEF</color>
+    <color name="AAAAAA">#aaaaaa</color>
+    <color name="_000000">#000000</color>
+    <color name="FAFBFB">#FAFBFB</color>
+    <color name="E6E6E6">#E6E6E6</color>
+    <color name="FF4C0D">#FF4C0D</color>
+    <color name="FFB248">#FFB248</color>
+    <color name="FAF8F5">#FAF8F5</color>
+    <color name="select_station_bg_selected_new">#F3DEC1</color>
+    <color name="select_station_hint_new">#F3DEC1</color>
+    <color name="FF5705">#FF5705</color>
+    <!--  白色半透明-->
+    <color name="e6FFFFFF">#e6FFFFFF</color>
+    <color name="a999999">#999999</color>
+    <color name="whiteffffff">#FFFFFF</color>
+    <color name="BFD6ED">#BFD6ED</color>
+    <color name="FFEFEEF4">#FFEFEEF4</color>
+    <color name="transparent00">#00000000</color>
+    <color name="_85BE46">#85BE46</color>
+    <color name="_F94F4F">#F94F4F</color>
+    <color name="_61BEF2">#61BEF2</color>
+    <color name="_6C80E6">#6C80E6</color>
+    <color name="_FFAE41">#FFAE41</color>
+    <color name="_01C8C6">#01C8C6</color>
+    <color name="_14C1F2">#14C1F2</color>
+    <color name="_FF3000">#FF3000</color>
+</resources>

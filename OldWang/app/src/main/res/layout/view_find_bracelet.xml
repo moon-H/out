@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/FFFFFF"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_tab_item_height"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFindBracelet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/find_bracelet_img_margin_top"
+                android:src="@anim/progress_find_bracelet"/>
+
+            <Button
+                android:id="@+id/btnFindBracelet"
+                style="@style/service_detail_btn_style"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/register_btn_height"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/service_detail_btn_margin_bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:layout_marginTop="@dimen/service_detail_btn_margin_top"
+                android:background="@drawable/unavailble_btn_bg"
+                android:gravity="center"
+                android:text="@string/title_activity_find_bracelet"/>
+
+            <TextView
+                android:id="@+id/tv_connect_bracelet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_30"
+                android:text="连接手环XXX"
+                android:textColor="@color/bottom_bg_selected"
+                android:textSize="@dimen/order_title_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

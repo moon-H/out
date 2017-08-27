@@ -1,0 +1,355 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/EEEEEE"
+        android:orientation="vertical">
+
+        <com.whl.client.view.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showBack="true"
+            app:showMenu="false"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/help"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@drawable/selector_settings_bg3"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView-->
+                        <!--style="@style/SettingsIconStyle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/icon_set_help" />-->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/order_item_line"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/select_result_line"/>
+
+                            <TextView
+                                style="@style/StyleSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:text="@string/settings_help"
+                                android:textSize="@dimen/setting_text_size"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_arrow"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/order_item_line"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:background="@color/select_result_line"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@drawable/selector_settings_bg3"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView-->
+                        <!--style="@style/SettingsIconStyle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/icon_set_opinion" />-->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/StyleSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:text="@string/settings_feed_back"
+                                android:textSize="@dimen/setting_text_size"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_arrow"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/order_item_line"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:background="@color/select_result_line"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/check_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@drawable/selector_settings_bg3"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!--<ImageView-->
+                        <!--style="@style/SettingsIconStyle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/icon_set_update" />-->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/StyleSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:layout_weight="1"
+                                android:text="@string/settings_check_version"
+                                android:textSize="@dimen/setting_text_size"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_arrow"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/order_item_line"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:background="@color/select_result_line"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nfc_reader"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:background="@drawable/selector_settings_bg3"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!--<ImageView-->
+                        <!--style="@style/SettingsIconStyle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/icon_set_nfc" />-->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/StyleSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                                android:text="@string/settings_nfc_reader"
+                                android:textSize="@dimen/setting_text_size"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_arrow"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/selector_settings_bg3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!--style="@style/SettingsIconStyle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/icon_set_about" />-->
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/StyleSettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/setting_text_margin_left"
+                            android:text="@string/setting_about_shankephone"
+                            android:textSize="@dimen/setting_text_size"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_arrow"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/order_item_line"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/select_result_line"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_register_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/selector_settings_bg3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <!--<ImageView-->
+                    <!--style="@style/SettingsIconStyle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/icon_set_phone" />-->
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_register_phone"
+                            style="@style/StyleSettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/setting_text_margin_left"
+                            android:text="@string/register_number"
+                            android:textSize="@dimen/setting_text_size"/>
+
+                        <TextView
+                            android:id="@+id/tv_phone_number"
+                            style="@style/StyleSettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textSize="@dimen/setting_text_size"/>
+
+                        <ImageView
+                            android:id="@+id/ic_bind_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_arrow"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_item_line"
+                    android:layout_marginTop="@dimen/setting_btn_margin_top"
+                    android:background="@color/select_result_line"/>
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_button_height"
+                    android:background="@drawable/selector_settings_bg3"
+                    android:gravity="center"
+                    android:text="@string/settings_exit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_button_size"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_item_line"
+                    android:background="@color/select_result_line"/>
+
+                <Button
+                    android:id="@+id/btn_delete_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_button_height"
+                    android:layout_marginTop="@dimen/setting_btn_margin_top"
+                    android:gravity="center"
+                    android:text="Delete CT"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_button_size"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

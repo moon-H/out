@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SingleTicketOrderDetailBgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.whl.client.coffee.view.CoffeeTitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/coffee_pay_success_img_margin_top"
+                android:src="@drawable/icon_pay_success" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/coffee_pay_success_layout_top"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/pay_success_line_width"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/coffee_CCCCCC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_line_margin_left"
+                    android:text="@string/coffee_pay_success"
+                    android:textColor="@color/coffee__333333"
+                    android:textSize="@dimen/coffee_pay_success_title_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/pay_success_line_width"
+                    android:layout_height="@dimen/coffee_line_width"
+                    android:layout_marginLeft="@dimen/coffee_pay_success_line_margin_left"
+                    android:background="@color/coffee_CCCCCC" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/coffee_pay_success_take_shop_margin_top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lable_take_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coffee_take_shop"
+                        android:textColor="@color/coffee_black"
+                        android:textSize="@dimen/coffee_pay_success_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/coffee_black"
+                        android:textSize="@dimen/coffee_pay_success_text_size2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coffee_take_shop_take"
+                        android:textColor="@color/coffee_black"
+                        android:textSize="@dimen/coffee_pay_success_text_size2" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/coffee_pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/coffee_pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/coffee_pay_success_take_shop_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/coffee_order_num"
+                    android:textColor="@color/coffee_text_color"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/coffee_pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/lable_order_number"
+                    android:textColor="@color/coffee_text_color"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/coffee_take_goods_time"
+                    android:textColor="@color/coffee_text_color"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_take_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/coffee_pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/label_time"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/coffee_pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/coffee_pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/coffee_pay_success_text_margin_top2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/coffee_take_goods_address"
+                    android:textColor="@color/coffee_text_color"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/coffee_pay_success_line_margin_left"
+                    android:layout_toRightOf="@+id/label_address"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/coffee_take_pay_time"
+                    android:textColor="@color/coffee_text_color"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/label_pay_time"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/coffee_pay_success_dot_line_margin_top"
+                android:src="@drawable/imaginary_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/coffee_pay_success_amount_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/coffee_pay_money"
+                    android:textColor="@color/coffee_999999"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_pay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                    android:textColor="@color/item_FF4C0D"
+                    android:textSize="@dimen/coffee_pay_success_text_size1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

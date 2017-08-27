@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EEEEEE"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="@dimen/service_detail_img_width"
+                    android:layout_height="@dimen/service_detail_img_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/service_detail_img_margin_top"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_loginNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-10dp"
+                    android:text="0000000000000000"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/ll_hce_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="65dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发卡日期 : "
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_hce_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-09-19"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                style="@style/service_detail_info_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_info_text_margin_top" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_add_btn_margin_top"
+                android:background="@drawable/selector_login_btn"
+                android:gravity="center"
+                android:text="@string/download"
+                android:textColor="@color/color_title_text"
+                android:textSize="@dimen/login_btn_size" />
+            <!--android:layout_marginBottom="@dimen/service_detail_box_margin_bottom"-->
+            <LinearLayout
+                android:id="@+id/lly_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/service_detail_info_padding"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_clause_margin_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_user_tnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_rember_pwd"
+                    android:checked="true" />
+
+                <TextView
+                    style="@style/login_text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_remember_margin_left"
+                    android:text="@string/user_tnc"
+                    android:textColor="@color/conn_bracelet_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    style="@style/login_text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_remember_margin_left"
+                    android:text="@string/sp_service_clause"
+                    android:textColor="@color/FDCC06"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <!--<string name="app_name">ShankePhoneCoffee</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coffee_network_exception">当前网络不可用,请稍后再试</string>
+    <string name="coffee_connect_server_failed">访问失败,请稍后再试</string>
+    <string name="coffee_into_shop">进入店铺</string>
+    <string name="coffee_shop_phone">电话:</string>
+    <string name="coffee_shop_add">地址:</string>
+    <string name="coffee_goods_package">商品分类</string>
+    <string name="coffee_renminbi">¥</string>
+    <string name="coffee_add_shopping_car">加入购物车</string>
+    <string name="coffee_choose_kw">选择口味</string>
+    <string name="coffee_sure">确定</string>
+    <string name="coffee_shoujia">售价:</string>
+    <string name="coffee_goods_detail">商品详情</string>
+    <string name="coffee_package_contains">内含:</string>
+    <string name="coffee_second_package">套餐</string>
+    <string name="coffee_take_time">取餐时间</string>
+    <string name="coffee_take_time_hine">请选择</string>
+    <string name="coffee_commit_order_tips">描述:取餐时间最晚是店铺的营业时间\n为了保证您的美味口感!可提前15分钟内到达店内就餐!</string>
+    <string name="coffee_cancle">取消</string>
+    <string name="coffee_pickerview_year">年</string>
+    <string name="coffee_pickerview_month">月</string>
+    <string name="coffee_pickerview_day">日</string>
+    <string name="coffee_pickerview_hour">时</string>
+    <string name="coffee_pickerview_minute">分</string>
+    <string name="coffee_money_unit">%s 元</string>
+    <string name="coffee_commite_order">提交订单</string>
+    <string name="coffee_title_order">订单</string>
+    <string name="coffee_dialog_head">提示</string>
+    <string name="coffee_next_not_remind">下次不再提示</string>
+    <string name="coffee_cancel">取消</string>
+    <string name="coffee_ok">确定</string>
+    <string name="coffee_add_shop_car">加入购物车</string>
+    <string name="coffee_hot_goods">当季热推</string>
+    <string name="coffee_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="coffee_shop_car_empty">购物车是空的</string>
+    <string name="coffee_shop_car_ok">选好了</string>
+    <string name="coffee_symbol_rmb">¥</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="clear_shopping_cart">清空购物车</string>
+    <string name="coffee_shop_car_total">合计:</string>
+    <string name="coffee_take_time_err">取餐时间不能小于当前时间</string>
+    <string name="coffee_choose_take_time">请选择取餐时间</string>
+    <string name="coffee_choose_no_goods">还没有选餐</string>
+
+    <string name="coffee_take_goods_time">取餐时间</string>
+    <string name="coffee_take_pay_time">支付时间</string>
+    <string name="coffee_take_goods_address">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址</string>
+    <string name="coffee_order_num">订&#160;&#160;单&#160;&#160;号</string>
+    <string name="coffee_pay_success">支付成功</string>
+    <string name="coffee_pay_money">支付金额</string>
+    <string name="coffee_take_shop">凭以下订单号到</string>
+    <string name="coffee_take_shop_take">取餐</string>
+    <string name="coffee_pay_success_title">支付成功</string>
+    <string name="coffee_no_hot_goods">当前店铺该商品库存为0</string>
+    <string name="coffee_no_hot_goods_left">再看看</string>
+    <string name="coffee_no_hot_goods_right">不买了</string>
+    <string name="coffee_no_login_client">请登录客户端再进行购买</string>
+    <string name="coffee_change_shop">切换到店铺列表将清空购物车,是否继续</string>
+    <string name="coffee_used_go">最近去过的店铺</string>
+    <string name="coffee_m">m</string>
+    <string name="coffee_km">km</string>
+    <string name="coffee_remark_message">请留言</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lly_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha="0.1"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:id="@+id/rl_cart_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopCartMain"
+            android:background="@color/FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/coffee_shop_car_title_height"
+                android:background="@color/coffee_E6E6E6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/coffee_shop_car_title_txt_hr_margin"
+                    android:text="@string/shopping_cart"
+                    android:textColor="@color/coffee__333333"
+                    android:textSize="@dimen/coffee_shop_car_title_txt_size"/>
+
+                <TextView
+                    android:id="@+id/tv_clear_shop_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/coffee_shop_car_title_txt_hr_margin"
+                    android:text="@string/clear_shopping_cart"
+                    android:textColor="@color/coffee__333333"
+                    android:textSize="@dimen/coffee_shop_car_title_txt_size2"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/coffee_shop_car_height2"
+                android:layout_below="@+id/rl_title"
+                android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/coffee_shop_car_common"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.whl.client.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false"/>
+    <LinearLayout
+        android:id="@+id/transacion_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/service_detail_list_title"
+        android:background="@color/my_service_detail_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_margin_left"
+        android:paddingRight="@dimen/common_margin_right" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/MyServiceDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8"
+            android:gravity="center"
+            android:text="@string/trans_time" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/MyServiceDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:gravity="center"
+            android:text="@string/trans_type" />
+
+        <TextView
+            android:id="@+id/tv_other"
+            style="@style/MyServiceDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:gravity="center"
+            android:text="@string/trans_amount" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.whl.client.view.PullDownView
+            android:id="@+id/lvDevice"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/setting_block_margin_top"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:gravity="center"
+            android:text="@string/no_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

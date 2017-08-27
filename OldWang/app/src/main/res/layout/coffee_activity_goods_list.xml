@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_F4F3F4"
+    android:orientation="vertical">
+
+    <com.whl.client.coffee.view.CoffeeTitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false" />
+    <!--轮播图相关开始-->
+    <FrameLayout
+        android:id="@+id/frl_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/coffee_banner_height"
+        android:layout_below="@+id/title">
+
+        <com.whl.client.coffee.view.viewpager.LoopViewPager
+            android:id="@+id/vp_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coffee_banner_height"
+            android:layout_gravity="top"
+            android:visibility="visible" />
+
+        <com.whl.client.coffee.view.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coffee_banner_indicator_height"
+            android:layout_gravity="bottom|center"
+            android:paddingTop="2dp" />
+    </FrameLayout>
+    <!--轮播图相关结束-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_left"
+                android:layout_width="@dimen/coffee_goods_left_width"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/coffee_category_margin_right"
+                android:background="@color/coffee_white" />
+
+            <FrameLayout
+                android:id="@+id/fl_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/coffee_category_margin_right"
+                android:background="@color/coffee_white" />
+        </LinearLayout>
+        <include layout="@layout/coffee_shop_car_common" />
+    </FrameLayout>
+</LinearLayout>

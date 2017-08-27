@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/event_item_margin_top"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="@dimen/event_item_margin_top">
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/icon_logo_wtite"/>-->
+
+
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="@dimen/event_item_width"
+        android:layout_height="@dimen/event_item_height"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

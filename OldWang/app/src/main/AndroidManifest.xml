@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest
+    package="com.whl.client"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true"/>
+    <!-- 个推iBeancon功能所需权限 手环start-->;
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 个推iBeancon功能所需权限 手环end-->;
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- 个推3.0电子围栏功能所需权限 start-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 个推3.0电子围栏功能所需权限 end-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 高德地图定位使用此权限-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--友盟读取日志-->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+
+    <application
+        android:name="com.whl.client.app.BizApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/shankephone_app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="icon, label">
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false"/>
+        <!--杨威新增友盟开始-->
+        ·
+        <activity
+            android:name=".wxapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!--杨威新增友盟结束-->
+
+        <activity
+            android:name="com.whl.client.login.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name=".settings.CheckPasswordActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/DialogActivityStyle"-->
+        <!--android:windowSoftInputMode="stateAlwaysHidden"/>-->
+        <activity
+            android:name="com.whl.client.upgrade.DownLoadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogActivityStyle"/>
+        <!--<activity-->
+        <!--android:name=".home.HomeActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.whl.client.settings.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.settings.HelpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.settings.InviteFriendActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.settings.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.whl.client.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".home.inbox.InboxDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.inbox.InboxListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.home.BrowserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.whl.client.settings.ChangeLoginPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.whl.client.login.register.ClauseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".login.register.RegisterUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".login.register.RegisterThirdUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.whl.client.login.ResetLoginPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.whl.client.app.ExitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".home.event.EventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".order.OrderListActivity"
+            android:screenOrientation="portrait"
+
+            >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter"/>
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.whl.client.home.ticket.STHomeActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/shankephone_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter"/>
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.whl.client.home.ticket.STSelectStaionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".home.ticket.STSelectCityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!--<activity-->
+        <!--android:name=".home.ticket.detail.STPreGetTicketDetailActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="stateAlwaysHidden"/>-->
+        <activity
+            android:name="com.whl.client.home.ticket.detail.STWithoutPayDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.whl.client.home.ticket.detail.STGetTicketActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".home.ticket.BuyTicketByStationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!--<activity-->
+        <!--android:name=".home.ticket.detail.STRefundTicketDetailActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="stateAlwaysHidden"/>-->
+        <activity
+            android:name="com.whl.client.home.ticket.detail.STGetTicketCompleteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".home.ticket.detail.STPaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- CM app use -->
+        <activity
+            android:name="com.cmcc.wallet.nfc.api.core.operate.ClientEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.whl.client.upgrade.DownLoadService"/>
+        <service android:name="com.whl.client.app.SendLogService"/>
+        <service android:name=".app.SingleTicketService"/>
+        <!--<service-->
+        <!--android:name="com.skcc.cortsm.otaproxy.service.StartService"-->
+        <!--android:enabled="true" />-->
+        <service
+            android:name="com.whl.client.push.GeTuiService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+
+        <service
+            android:name="com.xrz.lib.ota.OTAService"
+            android:exported="true"/>
+        <service
+            android:name="com.xrz.lib.bluetooth.BluetoothLeService"
+            android:enabled="true"/>
+
+
+        <!--<receiver-->
+        <!--android:name="com.skcc.cortsm.otaproxy.receiver.OtaProxyReceiver"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.skcc.otaproxy.push.REGISTERED" />-->
+        <!--<action android:name="com.skcc.otaproxy.push.UNREGISTERED" />-->
+        <!--<action android:name="com.skcc.otaproxy.push.ERROR" />-->
+        <!--<action android:name="com.skcc.otaproxy.push.MESSAGE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <receiver android:name="com.whl.client.app.DMReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.cssweb.shankephone.action.ACTION_NT_CLEAR_NOTI"/>
+                <action android:name="com.cssweb.shankephone.ACTION_PUSH_MSG_INBOX"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whl.client.app.BlueToothReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"></action>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${CHANNEL_VALUE}"
+            tools:replace="android:value"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="73QPV2AMt2iyveqss49j8WsF"/>
+        <!--//key:开发者申请的key-->
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+
+                <data android:scheme="tencent1104917864"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.whl.client.download.DownloadResService"/>
+
+        <activity
+            android:name="com.whl.client.home.BlankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlankActivityTheme"/>
+        <activity
+            android:name="com.whl.client.home.pickimage.TempAlbumsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.home.pickimage.AlbumsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.home.pickimage.AlbumPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.whl.client.home.ticket.LocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- 高德地图 -->
+        <service android:name="com.whl.client.push.CssPushService"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- 高德开发者key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ee09129a877939ef2d85d73e76110bfa"></meta-data>
+
+        <activity android:name="com.whl.client.settings.CustomerServiceActivity"/>
+    </application>
+
+</manifest>

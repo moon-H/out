@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/station_gate_item_margin"
+    android:layout_marginRight="@dimen/station_gate_item_margin"
+    android:layout_marginTop="@dimen/station_gate_item_margin"
+    android:background="@drawable/exit_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/station_bus_textsize_margin">
+
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/station_bus_textsize_margin"
+            android:text="1号线"
+            android:textColor="@color/bottom_text_nor"
+            android:textSize="@dimen/station_gate_textsize" />
+
+        <TextView
+            android:id="@+id/tv_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/station_bus_textsize_margin"
+            android:text="180m"
+            android:textColor="@color/bottom_text_nor"
+            android:textSize="@dimen/station_gate_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/station_bus_textsize_margin"
+        android:layout_marginTop="@dimen/station_gate_textsize_margin">
+
+        <TextView
+            android:id="@+id/tv_bus_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:text="86路"
+            android:textColor="@color/bottom_text_nor"
+            android:textSize="@dimen/station_gate_textsize"
+            android:layout_alignParentTop="true"
+            android:maxLines="1"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

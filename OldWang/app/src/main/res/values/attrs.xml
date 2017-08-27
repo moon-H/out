@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- titlebar -->
+    <declare-styleable name="TitleBar">
+        <attr name="showBack" format="boolean"/>
+        <attr name="showMenu" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CustomClearEditText">
+        <attr name="hint" format="string"/>
+        <attr name="showTruth" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="round_textview">
+        <attr name="round_tv_color" format="reference"></attr>
+        <attr name="round_tv_corner_size" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomIconTextView">
+        <attr name="type" format="integer"></attr>
+    </declare-styleable>
+    <!-- badgeview-->
+    <declare-styleable name="MaterialBadgeTextView">
+        <attr name="mbtv_backgroundColor" format="color"/>
+        <attr name="mbtv_border_width" format="dimension"/>
+        <attr name="mbtv_border_color" format="color"/>
+        <attr name="mbtv_border_alpha" format="float"/>
+        <attr name="mbtv_type" format="enum">
+            <enum name="shadow_gradual" value="1"/>
+            <enum name="shadow_alpha" value="2"/>
+        </attr>
+    </declare-styleable>
+    <!-- badgeview-->
+    <declare-styleable name="CircleTextImageView">
+        <attr name="citv_border_width" format="dimension"/>
+        <attr name="citv_border_color" format="color"/>
+        <attr name="citv_border_overlay" format="boolean"/>
+        <attr name="citv_fill_color" format="color"/>
+        <attr name="citv_text_text" format="string"/>
+        <attr name="citv_text_color" format="color"/>
+        <attr name="citv_text_size" format="dimension"/>
+        <attr name="citv_text_padding" format="dimension"/>
+    </declare-styleable>
+//coffee
+    <declare-styleable name="CoffeeTitleBar">
+        <attr name="showBacks" format="boolean"/>
+        <attr name="showMenus" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+    </declare-styleable>
+</resources>

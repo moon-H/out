@@ -1,0 +1,258 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-ignorewarnings
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.support.v4.app.Fragment
+# Keep support.v4
+-keep class android.support.v4.** {*;}
+
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+
+# Serializables
+
+-keepnames class * implements java.io.Serializable
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    static android.os.Parcelable$Creator CREATOR;
+}
+
+-keepclassmembers class **.R$* {
+    public static final int *;
+}
+
+-keep public class com.whl.client.R$*{
+	public static final int *;
+}
+
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.** {*;}
+-keep class com.whl.framework.http.model.** {*;}
+-keep class com.whl.client.gateway.model.** {*;}
+#-keep class com.cssweb.shankephone.home.card.seservice.instance.** {*;}
+-keep class com.loopj.android.http.** {*;}
+-keep class com.nostra13.universalimageloader.** {*;}
+-keep class com.sun.crypto.provider.** {*;}
+-keep class com.google.zxing.** {*;}
+-keep class com.hisun.b2c.** {*;}
+-keep class org.litepal.**{*;}
+-keep class com.skcc.**{*;}
+-keep class com.whl.framework.downloadlibrary.**{*;}
+
+# panchan start
+# 保留对外接口的类名和接口方法名
+-keep public class com.panchan.wallet.sdk.WalletTask
+-keepclassmembers class com.panchan.wallet.sdk.WalletTask {
+    public *;
+}
+-keep public class com.panchan.wallet.sdk.WebViewJavaScriptInterface
+-keep public class com.panchan.wallet.util.secure.crypto.PayUtil
+-keepclassmembers class com.panchan.wallet.util.secure.crypto.PayUtil {
+    public *;
+}
+-keepclassmembers class com.panchan.wallet.sdk.WebViewJavaScriptInterface {
+  public *;
+}
+-keep public class com.panchan.wallet.sdk.ui.activity.mywallet.MyWalletMainActivity
+-keepattributes *JavascriptInterface*
+# 保留内部类
+-keepattributes InnerClasses
+-keep class com.panchan.wallet.sdk.WalletTask$* {
+    *;
+}
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.app.AuthTask{ public *;}
+
+-dontwarn com.taobao.**
+-keep class com.taobao.** {*;}
+-dontwarn com.hisun.**
+-keep class com.hisun.** {*;}
+
+# 友盟统计混淆配置
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+# 信鸽推送配置项
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep class com.tencent.android.tpush.**  {*;}
+-keep class com.tencent.mid.**  {*;}
+# 银联支付
+-dontwarn com.unionpay.mobile.android.**
+-keep public class com.unionpay.uppay.net.HttpConnection {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.net.HttpParameters {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.model.BankCardInfo {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.model.PAAInfo {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.model.ResponseInfo {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.model.PurchaseInfo {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.util.DeviceInfo {
+   public <methods>;
+}
+-keep public class com.unionpay.uppay.util.PayEngine {
+   public <methods>;
+   native <methods>;
+}
+-keep public class com.unionpay.utils.UPUtils {
+   native <methods>;
+}
+-dontwarn com.unionpay.mobile.android.**
+-keep class org.simalliance.openmobileapi.** {*;}
+-keep class org.simalliance.openmobileapi.service.** {*;}
+
+-keep class com.unionpay.** {*;}
+# panchan end
+
+# lakala start
+-keep class com.chinamobile.**  {*;}
+-keep class com.lakala.**  {*;}
+-keep class com.newland.**  {*;}
+-keep class com.xrz.lib.**  {*;}
+# lakala end
+
+# Share start
+-dontshrink
+ -dontoptimize
+ -dontwarn com.google.android.maps.**
+ -dontwarn android.webkit.WebView
+ -dontwarn com.umeng.**
+ -dontwarn com.tencent.weibo.sdk.**
+ -dontwarn com.facebook.**
+ -keep public class javax.**
+ -keep public class android.webkit.**
+ -dontwarn android.support.v4.**
+ -keep enum com.facebook.**
+ -keepattributes Exceptions,InnerClasses,Signature
+ -keepattributes *Annotation*
+ -keepattributes SourceFile,LineNumberTable
+
+ -keep public interface com.facebook.**
+ -keep public interface com.tencent.**
+ -keep public interface com.umeng.socialize.**
+ -keep public interface com.umeng.socialize.sensor.**
+ -keep public interface com.umeng.scrshot.**
+
+ -keep public class com.umeng.socialize.* {*;}
+
+
+ -keep class com.facebook.**
+ -keep class com.facebook.** { *; }
+ -keep class com.umeng.scrshot.**
+ -keep public class com.tencent.** {*;}
+ -keep class com.umeng.socialize.sensor.**
+ -keep class com.umeng.socialize.handler.**
+ -keep class com.umeng.socialize.handler.*
+ -keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+ -keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+
+ -keep class im.yixin.sdk.api.YXMessage {*;}
+ -keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+ -dontwarn twitter4j.**
+ -keep class twitter4j.** { *; }
+
+ -keep class com.tencent.** {*;}
+ -dontwarn com.tencent.**
+ -keep public class com.umeng.soexample.R$*{
+     public static final int *;
+ }
+ -keep public class com.umeng.soexample.R$*{
+     public static final int *;
+ }
+ -keep class com.tencent.open.TDialog$*
+ -keep class com.tencent.open.TDialog$* {*;}
+ -keep class com.tencent.open.PKDialog
+ -keep class com.tencent.open.PKDialog {*;}
+ -keep class com.tencent.open.PKDialog$*
+ -keep class com.tencent.open.PKDialog$* {*;}
+
+ -keep class com.sina.** {*;}
+ -dontwarn com.sina.**
+ -keep class  com.alipay.share.sdk.** {
+    *;
+ }
+ -keepnames class * implements android.os.Parcelable {
+     public static final ** CREATOR;
+ }
+
+ -keep class com.linkedin.** { *; }
+ -keepattributes Signature
+# Share end
+
+# glid start
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+# glid end
+# getui start
+-dontwarn com.igexin.**
+-keep class com.igexin.**{*;}
+# getui end
+# eventbus start
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+# eventbus end
+#GaoDeMap start
+# 3D 地图 V5.0.0之后：
+-keep   class com.amap.api.maps.**{*;}
+-keep   class com.autonavi.**{*;}
+-keep   class com.amap.api.trace.**{*;}
+#    定位
+-keep class com.amap.api.location.**{*;}
+-keep class com.amap.api.fence.**{*;}
+-keep class com.autonavi.aps.amapapi.model.**{*;}
+#    搜索
+-keep   class com.amap.api.services.**{*;}
+#    2D地图
+-keep class com.amap.api.maps2d.**{*;}
+-keep class com.amap.api.mapcore2d.**{*;}
+#    导航
+-keep class com.amap.api.navi.**{*;}
+-keep class com.autonavi.**{*;}
+#GaoDeMap end

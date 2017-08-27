@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_F4F3F4"
+    android:orientation="vertical">
+
+    <com.whl.client.coffee.view.CoffeeTitleBarView
+        android:id="@+id/coffee_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coffee_title_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_selectTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coffee_take_time_height"
+            android:background="@color/coffee_white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/coffee_create_order_take_time_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/coffee_take_time"
+                android:textColor="@color/coffee_black"
+                android:textSize="@dimen/coffee_shop_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_show_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/coffee_margin_20"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="@string/coffee_choose_take_time"
+                    android:textColor="@color/coffee_999999"
+                    android:textColorHint="@color/coffee_999999"
+                    android:textSize="@dimen/coffee_progress_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/coffee_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coffee_take_time_height"
+            android:background="@color/coffee_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/coffee_create_order_take_time_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/coffee_remark"
+                android:textColor="@color/coffee_black"
+                android:textSize="@dimen/coffee_shop_name" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/coffee_margin_20"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/coffee_remark_message"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/coffee_999999"
+                android:textColorHint="@color/coffee_999999"
+                android:textSize="@dimen/coffee_progress_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/ll_remark"
+            android:layout_marginTop="15dp"
+            android:background="@color/coffee_white" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_remark"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:background="@color/coffee_F4F3F4"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:text="恭喜您获得低价换购特权"
+            android:textColor="@color/coffee_black"
+            android:textSize="@dimen/coffee_shop_into" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_goods_low_price"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/coffee_white"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:paddingTop="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/coffee_create_order_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/coffee_create_order_bottom_bar_margin_top"
+        android:background="@color/coffee_white">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/coffee_create_order_bottom_bar_margin_left"
+            android:text="@string/coffee_shop_car_total"
+            android:textColor="@color/coffee_black"
+            android:textSize="@dimen/coffee_total_amount" />
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_total"
+            android:textColor="@color/coffee_black"
+            android:textSize="@dimen/coffee_shop_name" />
+
+        <TextView
+            android:id="@+id/tv_comform_order"
+            android:layout_width="@dimen/coffee_create_order_bottom_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/coffee_color_title_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/coffee_margin_15"
+            android:paddingRight="@dimen/coffee_margin_15"
+            android:text="@string/coffee_commite_order"
+            android:textColor="@color/coffee_white"
+            android:textSize="@dimen/coffee_shop_name" />
+    </RelativeLayout>
+</RelativeLayout>

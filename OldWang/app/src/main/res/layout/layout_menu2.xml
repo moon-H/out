@@ -1,0 +1,23 @@
+<LinearLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/record_pop_window_width"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:alpha="0.8"
+    android:gravity="center"
+    android:orientation="horizontal">
+    
+    <ListView
+        android:id="@+id/option_list"
+        android:dividerHeight="1dip"
+        android:divider="@color/pull_to_refresh_loading_text"
+        android:layout_width="@dimen/record_pop_window_width"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:smoothScrollbar="true"
+        android:cacheColorHint="#FFFFFF"
+        android:scrollbars="vertical"
+        android:layout_height="fill_parent"
+        android:listSelector="@android:color/transparent"/>
+</LinearLayout>

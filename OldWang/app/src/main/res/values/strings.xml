@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="shankephone_app_name">闪客蜂</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="retry">重试</string>
+    <string name="more">更多</string>
+    <string name="next_not_remind">下次不再提示</string>
+    <string name="double_click_exit">再按一次退出程序</string>
+    <string name="network_exception">当前网络不可用,请稍后再试</string>
+    <string name="choose_amount">请选择充值金额</string>
+    <string name="loading">正在加载...</string>
+    <string name="connect_server_failed">访问失败,请检查您的网络是否可用</string>
+    <string name="login_state_timeout">登录超时,请重新登录</string>
+    <string name="keyboard_name">闪客蜂安全键盘</string>
+    <string name="download">申请</string>
+    <!-- notice dialog -->
+    <string name="dialog_head">提示</string>
+    <string name="upgrade">升级</string>
+    <string name="upgrade_later">下次再说</string>
+    <string name="find_new_version">发现新版本</string>
+    <!-- download -->
+    <string name="download_background">后台下载</string>
+    <string name="download_install">安装</string>
+    <string name="download_retry">重试</string>
+    <string name="download_loading">正在下载</string>
+    <string name="download_failed">下载失败</string>
+    <string name="download_complete">下载完成</string>
+    <string name="mendatory_update">取消升级将无法使用客户端</string>
+    <string name="mendatory_update_plugin">取消升级将无法使用</string>
+    <!-- Settings -->
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="delete_confirm">确认删除？</string>
+    <string name="check_all">全选</string>
+
+    <!-- setting start-->
+    <string name="settings_check_version">检查版本</string>
+    <string name="settings_default_launch">设置默认启动</string>
+    <string name="settings_nfc_reader">NFC读卡</string>
+    <string name="settings_share">分享</string>
+    <string name="settings_feed_back">意见反馈</string>
+    <string name="settings_help">常见问题 </string>
+    <string name="settings_title">设置</string>
+    <string name="settings_exit">退出登录</string>
+    <string name="settings_latest_version">目前的版本已经是最新版本</string>
+    <string name="settings_logout_confirm">退出当前账号</string>
+    <string name="change_pwd">密码修改</string>
+    <string name="invite_friend">立即邀请</string>
+    <string name="invite_friend_title">邀请好友</string>
+    <string name="my_order">我的订单</string>
+    <string name="customer_service">客服</string>
+    <!-- setting end-->
+    <!-- change pwd -->
+    <string name="pwd_update">修改登录密码</string>
+    <string name="input_org_pwd">请输入原始密码</string>
+    <string name="input_new_pwd_again">请输入确认密码</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="input_login_pwd">请输入登录密码</string>
+    <string name="input_login_pwd_confirm">请输入确认密码</string>
+    <string name="pwd_not_equals">两次密码不一致</string>
+    <string name="change_pwd_success">密码修改成功</string>
+    <string name="third_login_can_not_change_password">您使用社交账号登录,不能修改密码</string>
+    <!-- share -->
+    <string name="share_scan_download">扫描二维码,可下载闪客蜂客户端</string>
+    <string name="share_scan_get_ticket">请在地铁站内互联网购票机\n处扫描二维码取票</string>
+    <string name="share_cg_get_ticket">①请在地铁站内云闸机处扫描二维码进站\n\n②请在地铁站内互联网购票机处扫描二维码取票（由于现在是试运行，某些车站可能没有设备）</string>
+    <string name="share_qr">分享二维码</string>
+    <string name="share_title">分享</string>
+    <string name="getTicket_title">取票</string>
+    <!-- feedback -->
+    <string name="feedback_hint">请写下您遇到的问题和建议，我们会在两日内给您回复，谢谢！</string>
+    <string name="send">发送</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_empty_msg">请输入您对本客户端的建议</string>
+    <string name="feedback_success">提交反馈成功</string>
+    <string name="btn_submit">下一步</string>
+    <!-- About -->
+    <string name="about_technique">版权所有:北京中软万维网络技术有限公司</string>
+    <string name="about_contact">客服电话: </string>
+    <string name="about_tel">400-640-8811</string>
+    <string name="about_current_version">当前版本:</string>
+    <string name="about">关于</string>
+    <!-- home start-->
+    <string name="inbox">我的消息</string>
+    <string name="map">站点</string>
+    <string name="price">票价</string>
+    <!-- home end-->
+    <!-- journey start-->
+    <string name="journey">行程</string>
+    <!-- journey end-->
+    <!-- register -->
+    <string name="register">注册</string>
+    <string name="verify_input_phone">请输入手机号</string>
+    <string name="verify_input_code">请输入验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="user_tnc">已经阅读并同意</string>
+    <string name="user_tnc_total">“闪客蜂服务协议”</string>
+    <string name="set_login_pwd">请设置登录密码</string>
+    <string name="confirm_login_pwd">请再次输入登录密码</string>
+    <string name="input_valid_phone_number">请输入有效的手机号</string>
+    <string name="must_get_verify_code">请先获取验证码</string>
+    <string name="input_valid_code">请输入有效的验证码</string>
+    <string name="send_success">发送成功</string>
+    <string name="pwd_rule">密码长度为6-24位</string>
+    <string name="confirm_pwd_invalid">两次输入密码不一致</string>
+    <string name="clause">闪客蜂服务协议</string>
+    <string name="agree">同意</string>
+    <string name="agree_clause">请勾选服务协议</string>
+    <!-- login -->
+    <string name="login">登录</string>
+    <string name="login_input_user_name">请输入手机号</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="login_input_valid_phone_number">请输入有效的手机号</string>
+    <string name="login_input_valid_auth_code">请输入有效的验证码</string>
+    <string name="login_failed_7001">登录失败-7001</string>
+    <string name="login_date">登录时间</string>
+    <string name="login_device">登录设备</string>
+    <string name="login_prompt1">您的闪客蜂账号已经成功登录了一个新设备，本设备已被强制退出登录</string>
+    <string name="login_prompt">如果这个不是您本人的操作，您的账号已经泄露，请立即进入闪客蜂修改登录密码，以防止账号被盗</string>
+    <string name="login_status_error">登录失败,状态异常</string>
+    <!-- service list -->
+    <string name="device_not_support">手机不支持</string>
+    <string name="service_apply">申请</string>
+    <!-- service detail -->
+    <string name="need_download">需要下载</string>
+    <string name="complete_aciton">插件,是否下载?</string>
+    <string name="plugin_download_complete">安装成功</string>
+    <string name="topup">充值</string>
+    <string name="top_up_success_">恭喜您充值成功</string>
+    <string name="top_up_failed">抱歉充值失败</string>
+    <string name="order_top_up_failed">抱歉该订单充值失败</string>
+    <string name="top_up_max_value">充值金额超过可预存上限</string>
+    <string name="need_order_number">订单号不能为空</string>
+    <string name="need_card_number">卡号不能为空</string>
+    <string name="cu_open_tip">本服务需要通过联通钱包启动，是否要打开联通钱包？</string>
+    <string name="cu_applet_tip">请先到应用市场下载最新版的联通钱包</string>
+    <!-- inbox -->
+    <string name="title_fragment_inbox">消息</string>
+    <string name="title_activity_inbox_detail">收件详情</string>
+    <string name="delete_inbox_invalidate">请选择删除的信息</string>
+    <!-- listview -->
+    <string name="pulldown_update">下拉更新</string>
+    <string name="last_updated">上次更新</string>
+    <string name="released_updated">释放更新</string>
+    <string name="updated_at">更新于:</string>
+    <string name="pulldown_footer_text">上拉加载更多</string>
+    <string name="pulldown_loading">加载中</string>
+    <string name="no_content_refresh">无内容，下拉刷新试试</string>
+    <string name="no_content">无内容</string>
+    <string name="no_more">加载到底了</string>
+    <!-- My service detail -->
+    <string name="trans_time">日期</string>
+    <string name="trans_type">类型</string>
+    <string name="trans_amount">金额(元)</string>
+    <string name="trans_balance2">余额\t</string>
+    <string name="trans_unit">元</string>
+    <string name="cardnumber">卡号</string>
+    <string name="changsha_store_ticket">长沙地铁储值卡</string>
+    <string name="bracelet_topup">手环充值</string>
+    <string name="consume_metro">地铁消费</string>
+    <string name="consume_bus">公交消费</string>
+    <string name="consume_ohers">其他消费</string>
+    <string name="please_sync_order">订单异常,请重新确认订单</string>
+    <string name="has_writing_card_order">您有尚未完成的订单,处理完成后才可创建新订单.\n是否现在处理?</string>
+    <!-- check password -->
+    <string name="check_pwd_input_pwd">请输入登录密码</string>
+    <!-- reset pwd -->
+    <string name="reset_pwd_mobile">请输入手机号</string>
+    <string name="reset_find_pwd">重置密码</string>
+    <string name="send_password_to_email">已将新密码发送至您的手机,请确认</string>
+    <!-- NFC read -->
+    <string name="msg_nocard">没有卡片信息，请将卡片靠近NFC手机后盖尝试重新读取</string>
+    <string name="touch_background">请将卡片靠近NFC手机后盖</string>
+    <string name="unknown_card">读取信息失败，未知的卡片类型</string>
+    <string name="device_not_support_nfc">您的手机不支持NFC,无法使用此功能</string>
+    <!-- Change Card -->
+    <!-- deviceList -->
+    <!-- 充值记录 -->
+    <string name="re_write_card_btn">充值</string>
+    <string name="sync_order">同步</string>
+    <string name="order_has_write_card_success">此订单已充值成功</string>
+    <string name="order_not_write_card">此订单尚未完成充值</string>
+    <string name="unknown">无</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_failed">支付失败</string>
+    <string name="signature_invalid">签名校验失败</string>
+    <string name="get_token_failed">获取token失败</string>
+    <string name="writting_card">充值中</string>
+    <string name="writting_card_please_wait">充值中…</string>
+    <string name="order_delete_success">订单删除成功</string>
+    <string name="nfc_service_activate_success">服务激活成功</string>
+    <string name="nfc_service_activate_failed">服务激活失败</string>
+    <string name="nfc_service_activating">正在激活…</string>
+    <string name="nfc_service_apply_failed">申请服务失败</string>
+
+    <string name="cardNumber_invalid">无效的卡号</string>
+    <string name="cardNumber_or_balance_invalid">无效的卡号或余额</string>
+
+
+    <string-array name="delete_menu">
+        <item>删除订单</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <!-- app-->
+    <string name="app">应用</string>
+    <!-- nfc card -->
+    <string name="hebao">和包:</string>
+    <string name="cm_client">移动和包</string>
+    <!-- personal info -->
+    <string name="personal_info">我的</string>
+    <string name="my_panchan">我的盘缠</string>
+    <string name="my_coupon">我的券包</string>
+    <string name="certified">已认证</string>
+    <string name="uncertified">未认证</string>
+    <string name="launch_panchan_failed">启动我的盘缠失败,请稍后再试</string>
+    <string name="edit_user_head">编辑头像</string>
+    <!-- Event -->
+    <string name="event">活动</string>
+    <!-- order -->
+    <string name="order">订单</string>
+    <string name="subway_card">地铁卡</string>
+    <string name="zhang">张</string>
+    <string name="order_pay_failed">支付失败</string>
+    <string name="order_cooked">已制作</string>
+    <string name="order_take_way">已取餐</string>
+    <string name="order_closed">已关闭</string>
+    <string name="order_error">异常订单</string>
+    <string name="order_btn_take_away">取餐</string>
+    <string name="order_coffee_take_meal_des">凭以上订单号\n前往%1$s取餐</string>
+    <string name="order_coffee_hot_sale">大家购买过</string>
+    <string name="order_coffee">蜂格咖啡</string>
+    <!--cloudGate-->
+    <string name="cg_pre_get_ticket">待进站</string>
+    <string name="cg_without_pay">未支付</string>
+    <string name="cg_complete_order">已完成</string>
+    <string name="cg_canceled">已取消</string>
+    <string name="cg_refund">已退票</string>
+    <string name="other_status">其他</string>
+    <string name="order_invalid">已失效</string>
+    <string name="duplicate_entry">重复进站</string>
+    <!-- SingleTicket -->
+    <string name="station">站点</string>
+    <string name="ticket_price">票价</string>
+    <string name="input_station_name_hint">输入站点名称搜索</string>
+    <string name="search_station_title">线路</string>
+    <string name="no_station_name">没有对应的站点哦~</string>
+
+    <string name="st_refunding">退款中</string>
+    <string name="st_start_station2">起点</string>
+    <string name="st_end_station">终点</string>
+    <string name="st_start_station_hint">请选择起点</string>
+    <string name="st_unit_price">单价</string>
+    <string name="st_ticket_count">数量</string>
+    <string name="st_total_price">总价</string>
+    <string name="st_renminbi">¥</string>
+    <string name="st_confirm_buy">确认购买</string>
+    <string name="st_please_select_start_station">请选择起始站</string>
+    <string name="st_not_pay_ticket">请确认订单信息</string>
+    <string name="st_order_num">订单号</string>
+    <string name="st_order_num2">订单号:</string>
+    <string name="st_order_time1">订单时间:</string>
+    <string name="st_order_detail_singleticket">单程票</string>
+    <string name="st_order_detail_zhang">张</string>
+    <string name="st_order_detail_start">起点</string>
+    <string name="st_pre_open">待开通</string>
+    <string name="st_order_detail_end">终点</string>
+    <string name="st_order_detail_real_amount">应付金额</string>
+    <string name="st_order_detail_refund_rate">退票手续费率</string>
+    <string name="st_order_detail_refund_amount">退票后获得金额</string>
+    <string name="st_order_refund_amount">退票金额</string>
+    <string name="st_order_order_time">订单时间</string>
+    <string name="st_order_pay_time">支付时间</string>
+    <string name="st_order_refund_time">退款时间</string>
+    <string name="st_order_cancel_time">取消时间</string>
+    <string name="st_order_detail_status">状态</string>
+    <string name="st_order_detail_pay_order">支付订单</string>
+    <string name="st_order_detail_cancel_order">取消订单</string>
+    <string name="st_order_detail_buy_again">再次购买</string>
+    <string name="st_init">正在初始化</string>
+    <string name="st_slelect_different_station">起始站与终点站不能相同,请选择其他站点</string>
+    <string name="st_order_detail_refund_introduction">温馨提示:系统会在三个工作日内退款到您的支付账户,请注意查收</string>
+    <string name="refund">退款</string>
+    <string name="panchan_pay">盘缠支付</string>
+    <string name="st_getticket">取票</string>
+    <string name="st_refund_ticket">退款</string>
+    <string name="st_refund_money">退款</string>
+    <string name="str_continue">继续</string>
+    <string name="st_refund_ticket_rule">点击\"继续\"则表示您同意退票条例，扣除购买票价总额%1$s%%为手续费</string>
+    <string name="st_remain_ticket">剩余票数</string>
+    <string name="st_order_detail">订单详情</string>
+    <string name="st_order_refund_success">退款成功\n系统会在三个工作日内退款到您的支付账户,请注意查收</string>
+    <string name="st_ticket_information">购票信息</string>
+    <string name="st_station_no_end">无</string>
+    <string name="st_order_cancel_success">取消订单成功</string>
+    <string name="st_order_cancel_failed">取消订单失败</string>
+    <string name="st_order_delete_ok">确定</string>
+    <string name="st_order_delete_cancel">取消</string>
+    <string name="st_order_delete_tip">您确定要删除本条订单吗？</string>
+    <string name="st_order_del_success">删除订单成功</string>
+    <string name="st_order_del_failed">删除订单失败</string>
+    <string name="st_order_del_canceled">用户取消</string>
+    <string name="st_ticket_complete">取票成功</string>
+    <string name="st_cg_ticket_title">进站成功</string>
+    <string name="st_ticket_complete_tip">感谢您使用闪客蜂单程票\n祝您旅途愉快，期待您的再次使用\n谢谢！</string>
+    <string name="st_cg_ticket_complete_tip">感谢您使用闪客蜂乘车码\n祝您旅途愉快，期待您的再次使用\n谢谢！</string>
+    <string name="st_ticket_complete_title">出票成功</string>
+    <string name="st_order_pay_complete">支付成功</string>
+    <string name="st_get_ticket_success_and_num">出票成功!本次共出票%1$s张</string>
+    <string name="start_station_must_belong_to_this_line">只能选择&#160;%1$s&#160;上的其他站作为起点</string>
+    <string name="start_station_must_not_belong_to_this_line">只能选择非&#160;%1$s&#160;上的其他站作为起点</string>
+    <string name="end_station_must_belong_to_this_line">只能选择&#160;%1$s&#160;上的其他站作为终点</string>
+    <string name="end_station_must_not_belong_to_this_line">只能选择非&#160;%1$s&#160;上的其他站作为终点</string>
+    <string name="st_station_can_not_set_start_station">此站暂时不能设置为起点</string>
+    <string name="st_price_station">起&#160;&#160;&#160;&#160;点</string>
+    <string name="st_price_unit">单&#160;&#160;&#160;&#160;价</string>
+    <string name="st_price_count">数&#160;&#160;&#160;&#160;量</string>
+    <string name="st_price_total">总&#160;&#160;&#160;&#160;价</string>
+    <string name="st_pay_amount">支付金额</string>
+    <string name="st_common_ticket">取票码</string>
+    <string name="st_qrcode_ticket">乘车码</string>
+    <string name="st_common_ticket_introduction">温馨提示:取票码每次可购买多张,每张取票码当日有效</string>
+    <string name="st_qr_ticket_introduction">温馨提示:乘车码每次只能购买一张,每张乘车码当日有效</string>
+    <string name="st_repay_ticket_station">补票站点</string>
+
+    <string name="st_pay_amount2">支付金额</string>
+    <string name="st_entry_gate">进站</string>
+    <string name="st_station_detail">站点详情</string>
+    <string name="st_gate">进出口</string>
+    <string name="st_near_bus_station">附近公交站</string>
+    <string name="st_buy_ticket_by_price">固定票价</string>
+    <string name="help">帮助</string>
+    <string name="entry_gate_time">进站时间</string>
+    <string name="exit_gate_time">出站时间</string>
+    <string name="entry_gate_success">进站成功</string>
+    <string name="exit_gate_success">出站成功</string>
+    <string name="exit_gate_station">出站站点</string>
+    <string name="exit_gate">出站</string>
+
+    <!--selectCity-->
+    <string name="se_select_city">选择城市</string>
+    <string name="se_location_city">定位城市</string>
+    <string name="se_open_station">目前开通城市</string>
+    <string name="se_location_fail">定位失败</string>
+    <!-- pullRefresh -->
+    <string name="pull_to_refresh_header_hint_loading">正在搜索手环</string>
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 :</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="app_name">闪客蜂手环</string>
+    <string name="title_activity_find_bracelet">搜索手环</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="title_activity_connect_bracelet">连接手环</string>
+    <string name="refund_confirm">是否确认退款?</string>
+    <string name="cls_cache_ok">清除缓存成功</string>
+    <string name="dialog_init">初始化</string>
+    <string name="dialog_conect">连接手环</string>
+    <string name="dialog_erro">连接异常</string>
+    <string name="dialog_disconect">连接断开</string>
+    <string name="dialog_disconecting">断开设备...</string>
+    <string name="dialog_timeout">连接超时</string>
+    <string name="dialog_conn_error">通讯异常</string>
+    <string name="dialog_conect_fail">连接失败</string>
+    <string name="dialog_transefer">与卡通讯</string>
+    <string name="default_launch">默认启动</string>
+    <string name="bandDevice">是否马上绑定手环？</string>
+    <string name="write_card_fail">抱歉充值失败，是否重试？</string>
+    <string name="conntDevice">手环未连接，确定重新连接？</string>
+    <string name="find_device_faile">未找到手环</string>
+
+    <string name="wristband_invalid">订单失效</string>
+    <string-array name="arrayOptions">
+        <item>解除绑定</item>
+        <item>手环管理</item>
+    </string-array>
+    <string name="band_success">绑定成功</string>
+    <string name="unband_success">解绑成功</string>
+    <string name="unband_fail">解绑失败,未绑定该设备</string>
+    <string name="mno_error">运营商信息有误:</string>
+    <string name="bluetooth_disabled">蓝牙未打开，请打开蓝牙</string>
+    <string name="bluetooth_on">蓝牙已打开</string>
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_over">加载到底了</string>
+    <!--下载路网图-->
+    <string name="cacel_download_map">是否取消下载资源文件?</string>
+    <string name="delete_download_map">是否删除已下载资源文件?</string>
+    <string name="delete_integration_download_map">当前城市只能删除线路、站点信息,是否删除?</string>
+    <string name="metro_map">路网图</string>
+    <string name="no_selected_city">当前未选择城市,是否要加载默认城市信息?</string>
+
+    <string name="service_expired">服务已超过有效期,请联系客服</string>
+    <string name="service_abnormal_contact_call_center">服务已注销,请联系客服</string>
+    <string name="call_service_center">联系客服</string>
+    <string name="user_state_abnormal">用户状态异常</string>
+    <string name="service_state_abnormal">服务状态异常</string>
+
+    <string name="verify_applet_failed">卡验证失败</string>
+
+
+    <string name="statistic_splashActivity">启动页</string>
+    <string name="statistic_AddServiceFragment">申请NFC卡应用</string>
+    <string name="statistic_AllOrderFragment">订单</string>
+    <string name="statistic_LoginActivity">登录页</string>
+    <string name="statistic_ResetLoginPwdActivity">重置密码</string>
+    <string name="statistic_ClauseActivity">条款页</string>
+    <string name="statistic_RegisterUserActivity">注册页</string>
+    <string name="statistic_DownloadMapTilesActivity">下载路网图资源页</string>
+    <string name="statistic_STBookByPriceFragment">固定票价购票</string>
+    <string name="statistic_STBookByStationFragment">单程票路网图</string>
+    <string name="statistic_STBookByPriceActivity">再次购买-票价</string>
+    <string name="statistic_STBookByStationDetailActivity">再次购买-站点</string>
+    <string name="statistic_STSelectCityActivity">选择城市页</string>
+    <string name="statistic_STSelectStationActivity">选择站点</string>
+    <string name="statistic_FindBraceletLakalaActivity">搜索手环页</string>
+    <string name="statistic_ConnectBraceletLakalaActivity">连接手环页</string>
+    <string name="statistic_BraceletNfcReadRecordActivity">手环主页</string>
+    <string name="statistic_InboxListActivity">消息列表页</string>
+    <string name="statistic_InboxDetailActivity">消息详情页</string>
+    <string name="statistic_ShareActivity">分享</string>
+    <string name="statistic_FeedbackActivity">意见反馈</string>
+    <string name="statistic_AboutActivity">关于闪客蜂</string>
+    <string name="statistic_HelpActivity">常见问题</string>
+    <string name="statistic_ChangeLoginPasswordActivity">密码修改</string>
+    <string name="statistic_RealCardDetailFragment">实体卡充值</string>
+    <string name="statistic_OrderFragment">单程票订单</string>
+    <string name="statistic_Settings">设置</string>
+    <string name="statistic_Personal_info">个人信息</string>
+    <string name="statistic_bbs_nick_name">论坛昵称</string>
+    <string name="statistic_my_post">我发表的</string>
+    <string name="statistic_my_reply">我回复的</string>
+    <string name="statistic_NfcTopUpFragment">NFC卡应用充值</string>
+    <string name="statistic_NfcBraceletFragment">NFC手环搜索</string>
+    <string name="statistic_SwipeRealCardFragment">检测实体卡</string>
+    <string name="statistic_EventFragment">活动列表</string>
+    <string name="statistic_BBSHomeFragment">社区主页</string>
+    <string name="statistic_NfcServiceFragment">申请NFC卡应用</string>
+    <string name="statistic_BraceletOrderFragment">NFC手环订单</string>
+    <string name="statistic_CsOrderFragment">NFC卡应用订单</string>
+    <string name="statistic_RealCardOrderFragment">实体卡订单</string>
+    <string name="statistic_STGetTicketActivity">取票码</string>
+    <string name="statistic_TopicDetailActivity">帖子详情</string>
+    <string name="statistic_EventActivity">活动详情</string>
+    <string name="statistic_BuyStationDetailFragment">站点购票</string>
+    <string name="statistic_StationDetailActivity">站点详情</string>
+    <string name="statistic_OrderListActivity">订单列表</string>
+    <string name="max_buy_ticket">最多可购买%1$s张单程票</string>
+
+    <string name="store_card_balance">储值卡余额</string>
+    <string name="bracelet_balance">手环余额</string>
+    <string name="available_amount">可充值金额</string>
+    <string name="select_amount">选择充值金额</string>
+
+    <string name="transaction_record">交易记录</string>
+    <string name="order_list">订单明细</string>
+
+    <string name="top_up_amount">充值金额</string>
+    <string name="consume_amount">消费金额</string>
+    <string name="consume_date">消费日期</string>
+    <string name="top_up_date">充值日期</string>
+    <string name="top_up_detail">充值明细</string>
+    <string name="consume_detail">消费明细</string>
+    <string name="transaction_all">全部</string>
+
+    <string name="connect_oma_failed">访问卡片失败</string>
+
+    <string name="please_select_city">请选择城市</string>
+    <string name="auth_login_fail">授权失败 请重试</string>
+    <string name="social_third_login">社交账号登录</string>
+    <string name="cant_buy_ticket">暂时无法购票</string>
+    <string name="third_active_success">绑定成功</string>
+
+    <string name="need_register_phone">需要绑定手机号才能使用此服务,是否绑定?</string>
+
+    <string name="bind">绑定</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="back">返回</string>
+    <string name="make_sure">确认</string>
+    <string name="register_number">绑定手机号</string>
+    <string name="setting_about_shankephone">关于闪客蜂</string>
+    <string name="settings_bbs_nick_name">论坛昵称</string>
+
+    <string name="support_ticket_city">开通闪客蜂服务城市</string>
+    <string name="unsupport_ticket_city">未开通闪客蜂服务城市</string>
+
+    <string name="sp_service_clause">闪客蜂手机刷卡乘车办理乘客须知</string>
+    <string name="clause_short">条款</string>
+    <string name="ct_auth_failed">认证失败</string>
+    <string name="ct_device_or_sim_unsupport">手机或sim卡不支持此服务</string>
+    <string name="ct_login_failed">登录失败 CT</string>
+    <string name="ct_install_applet_failed">应用下载失败</string>
+    <string name="ct_need_download_open_nfc_plugin">需要下载安装电信NFC能力开放客户端,是否下载?</string>
+    <string name="ct_open_nfc_plugin">电信NFC能力开放客户端</string>
+    <string name="ct_open_nfc_plugin_download_success">"电信NFC能力开放客户端"安装成功</string>
+    <string name="ct_open_nfc_plugin_need_send_sms">使用"电信NFC能力开放客户端"需要发送一条激活短信,是否发送?</string>
+    <string name="ct_send">发送</string>
+
+    <string name="no_single_ticket">亲~您暂时没有订单</string>
+    <string name="no_panchan_charge">亲~您暂时没有NFC卡应用充值订单</string>
+    <string name="no_hand_ticket">亲~您暂时没有手环充值订单</string>
+    <string name="no_realcard_ticket">亲~您暂时没有实体卡订单</string>
+    <string name="bracelet">手环</string>
+    <string name="tickey_explain">(取票后当天有效)</string>
+    <string name="pay_tickey">付款</string>
+
+    <string name="single_tickeys">单程票</string>
+    <string name="card_name">卡号:</string>
+    <string name="rufund_time">退款时间:</string>
+    <string name="pay_time">支付时间:</string>
+    <string name="take_time">取票时间:</string>
+    <string name="pay_money">退款金额:</string>
+    <string name="in_time">进站时间:</string>
+    <string name="out_time">出站时间:</string>
+    <string name="out_station">出站站点:</string>
+    <string name="surplus_ticket">剩余票数:</string>
+    <string name="cancle_time">取消时间:</string>
+    <string name="repay_amount">补票金额:</string>
+    <string name="single_price">单价:</string>
+
+    <string name="bbs">社区</string>
+    <string name="already_rooted">手机已经root,不支持当前操作</string>
+    <string name="root_no_hce">当前手机不支持HCE服务</string>
+
+    <string name="refund_card">已退卡</string>
+    <string name="pre_activity">待激活</string>
+    <string name="locked">已锁定</string>
+    <string name="nfc_service_locked">服务已锁定</string>
+
+    <!--bbs start-->
+    <string name="title_activity_personal_post">我的帖子</string>
+    <string name="post_shield">该贴已不存在</string>
+    <string name="reply">回复</string>
+    <string name="posted">发表</string>
+    <string name="posted_content_invalidate">标题或内容不能为空</string>
+    <string name="posted_content_title_length_invalidate">标题最少5个字符</string>
+    <string name="posted_content_content_length_invalidate">内容最少5个字符</string>
+    <string name="title_activity_post_detail">帖子详情</string>
+    <string name="content_is_null">内容不能为空</string>
+    <string name="content_invalidte">内容不少于5个字</string>
+    <string name="reply_post_startwith">回复</string>
+    <string name="floor">楼：</string>
+    <string name="reply_success">回帖成功</string>
+    <string name="http_failed">请求失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_topic_confirm">确认删除当前主题？</string>
+    <string name="delete_post_confirm">确认删除当前帖子？</string>
+    <string name="title_fragment_home">蜂蜜论坛</string>
+    <string name="check_in_already">今日已签到</string>
+    <string name="title_activity_sign">签到</string>
+    <string name="check_in_success_msg">签到成功</string>
+    <string name="title_activity_personal_info">个人信息</string>
+    <string name="edit_ok">完成</string>
+    <string name="nikename_invalidate">昵称不能为空</string>
+    <string name="personl_info_edit_success">修改成功</string>
+    <string name="check_in">每日签到</string>
+    <string name="check_in_sum">累计签到</string>
+    <string name="pooins_sum">累计积分</string>
+    <string name="nickname_space_hint">填写昵称</string>
+    <string name="nickname_space">昵&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称</string>
+    <string name="posted_title">输入帖子标题</string>
+    <string name="posted_content">输入内容</string>
+    <string name="nickname">昵称</string>
+    <string name="personal_my_posts">我的帖子</string>
+    <string name="personal_sign">签&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;到</string>
+    <string name="empty_publish_msg">你还没有任何发表\n马上去其他地方逛逛吧</string>
+    <string name="bbs_nick_name_has_changed">您的论坛昵称已经修改过,不能再次修改</string>
+    <string name="bbs_load_complete">没有更多帖子了</string>
+    <string name="bbs_no_data">亲,暂时没有可显示的帖子</string>
+
+    <string name="bbs_post_success">发帖成功</string>
+    <string name="bbs_post">发帖</string>
+    <string name="post_floor">楼</string>
+    <string name="reply_host">楼主</string>
+    <!--bbs end-->
+    <string name="location_city_not_matched">系统定位到您在%1$s,需要帮您切换吗?</string>
+    <string name="event_activite">活动</string>
+
+    <string name="nfc_pay_success">开始写卡,写卡过程中请不要移动手机和卡片</string>
+    <string name="nfc_write_failed">写卡失败,您可以将卡片置于NFC感应区重新写卡,或申请退款</string>
+    <string name="nfc_continue">继续</string>
+    <string name="nfc_wait_card">请将卡片置于NFC感应区开始写卡.\n写卡过程中请不要移动手机和卡片</string>
+    <string name="nfc_sync_write_card_failed">此订单充值失败,请您申请退款</string>
+    <string name="nfc_sync_open_nfc">同步订单需要使用NFC,请您先开启NFC</string>
+    <string name="nfc_sync_order_wait_card">同步订单,请将充值异常的卡片置于NFC感应区</string>
+    <string name="nfc_start_sync_order">开始同步订单,请将卡片置于NFC感应区.同步过程中请不要移动手机和卡片</string>
+    <string name="nfc_sync_order_failed">同步订单失败,信息不完整</string>
+    <string name="nfc_sync_order_failed2">同步订单失败,读取卡片信息出现异常</string>
+    <string name="nfc_sync_order_failed3">同步订单失败,与卡片连接断开</string>
+    <string name="nfc_find_tag">读取卡片信息,请勿移动</string>
+    <string name="nfc_parse_failed">读取信息失败,请勿移动卡片</string>
+    <string name="nfc_sync_failed">同步订单失败,未知的状态</string>
+    <string name="nfc_sync_device_not_support">设备不支持此操作</string>
+    <string name="bbs_one">功能讨论</string>
+    <string name="bbs_two">技术交流</string>
+    <string name="bbs_three">休闲娱乐</string>
+    <string name="hce_already_down">已申请</string>
+    <string name="city_name_guangzhou">广州</string>
+    <string name="current_city_not_support">当前城市不支持此服务</string>
+    <string name="ct_user_not_support">电信用户暂不支持空发,敬请期待</string>
+    <string name="bracelet_need_android_jelly_bean_mr2">当前android系统版本不支持此服务,需要android 4.3 及以上版本</string>
+
+    <string name="unknown_applet_state">未知的状态,请重启手机或退出应用再次尝试</string>
+
+    <string name="update_now">立即更新</string>
+    <string name="update_ignore">忽略</string>
+    <string name="skip">跳过</string>
+    <string name="advertisement">广告</string>
+    <string name="handle_order">处理</string>
+    <string name="product_category">商品分类</string>
+    <string name="choice_city">城市选择</string>
+    <string name="choice_status">状态选择</string>
+
+    <!--status start-->
+    <string name="st_all">全部状态</string>
+    <string name="st_pre_get_ticket">待取票</string>
+    <string name="st_without_pay">待支付</string>
+    <string name="st_complete_order">已取票</string>
+    <string name="st_canceled">已取消</string>
+    <string name="st_refund">已退款</string>
+    <string name="st_pre_entry">待进站</string>
+    <string name="st_pre_exit">待出站</string>
+    <string name="st_already_exit">已出站</string>
+    <string name="st_entry_pay">进站补票</string>
+    <string name="st_exit_pay">出站补票</string>
+    <string name="st_repay_order">补票</string>
+
+    <string name="re_write_card">补充值</string>
+    <string name="pre_pay">未支付</string>
+    <string name="wristband_paid">已支付</string>
+    <string name="wristband_topup">充值中</string>
+    <string name="wristband_topup_success">充值成功</string>
+    <string name="wristband_refund">已退款</string>
+    <!--status end-->
+    <string name="no_info">无</string>
+    <string name="product">商品</string>
+    <string name="status">状态</string>
+    <string name="order_filter">筛选</string>
+    <string name="order_category_nfc_topup">NFC卡应用</string>
+    <string name="order_category_single_ticket">取票码</string>
+    <string name="order_category_bracelet">NFC手环</string>
+    <string name="order_category_real_card">地铁实体卡</string>
+    <string name="order_category_qr_code_ticket">乘车码</string>
+    <string name="order_take_coffee_time">取餐时间:</string>
+
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="complete">完成</string>
+    <string name="camera_album">相机胶卷</string>
+    <string name="max_album_size">最多选择%1$s张图片</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_from_album">从手机相册选择</string>
+
+    <string name="please_show_qrcode_des">请将二维码靠近闸机扫码器</string>
+    <string name="show_qrcode_refresh">刷新二维码</string>
+    <string name="show_qrcode_des">连续使用请刷新二维码</string>
+    <string name="qrcode_ticket">刷票</string>
+    <string name="qrcode_over_pay_cancel">取消</string>
+    <string name="qr_data_is_null">获取二维码数据失败</string>
+    <string name="qrcode_over_time">您已超时,请补交票款</string>
+    <string name="qrcode_over_ride">您已超乘,请补交票款</string>
+    <string name="qrcode_over_time_ride">您已超时超乘,请补交票款</string>
+    <string name="yes_or_no_pay">元,是否支付?</string>
+
+    <string name="order_number">订&#160;&#160;单&#160;&#160;号</string>
+    <string name="st_start_station">起&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;点</string>
+    <string name="st_end_station2">终&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;点</string>
+    <string name="back_home">返回主页</string>
+    <string name="qr_tickty_help">帮助</string>
+    <string name="current_city_not_support_qrcode_ticket">当前城市暂不支持乘车码</string>
+
+    <string name="buy_again_prompt">再次购买时不能切换站点</string>
+    <string name="buy_again_can_not_switch_type">再次购买时不能切换票种</string>
+
+    <string name="no_get_ticket_device">%1$s暂无互联网取票机,不能作为起点</string>
+    <string name="set_statrt_station">设为起点</string>
+    <string name="set_end_station">设为终点</string>
+    <string name="set_exit">出口</string>
+    <string name="buy_tickey_by_price">票价购买</string>
+    <string name="gate_exit">出口</string>
+    <string name="touch_message_all">点击查看</string>
+    <string name="touch_read_all">阅读全文</string>
+
+    <string name="detail">详情</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="message_event_detail">消息详情</string>
+
+    <string name="btn_name_entry">进站</string>
+    <string name="btn_name_exit">出站</string>
+    <string name="btn_name_handle">处理</string>
+    <string name="btn_name_cancel">取消</string>
+
+    <string name="un_finish_order_prompt1">您有一笔&#160;%1$s站&#160;至&#160;%2$s站&#160;的乘车码,处于%3$s状态,是否%4$s?</string>
+    <string name="un_finish_order_prompt2">您有一笔&#160;%1$s站&#160;起始的乘车码,处于%2$s状态,是否%3$s?</string>
+
+    <string name="status_all">全部</string>
+    <string name="status_un_pay">待支付</string>
+    <string name="status_un_finish">未完成</string>
+    <string name="status_finish">已完成</string>
+    <string name="login_and_register">注册/登录</string>
+
+    <string name="journey_empty">暂无行程订单</string>
+
+</resources>

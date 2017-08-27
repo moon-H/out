@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/SingleTicketOrderDetailBgStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:round_tv_attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/common_margin_right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/st_order_detail_height2"
+            android:layout_marginTop="@dimen/st_order_detail_margin_top">
+
+            <TextView
+                android:id="@+id/start"
+                style="@style/SingleTicketOrderOrderDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/st_order_detail_start"
+                android:textSize="@dimen/st_order_detail_textsize3"/>
+
+            <com.whl.client.view.RoundTextView
+                android:id="@+id/tv_start_line_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/st_order_line_name_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_order_detail_margin_left"
+                android:layout_toRightOf="@+id/start"
+                android:gravity="center"
+                android:minWidth="@dimen/st_order_line_name_min_width"
+                android:paddingLeft="@dimen/st_order_line_name_padding"
+                android:paddingRight="@dimen/st_order_line_name_padding"
+                android:textColor="@color/FFFFFF"
+                android:textSize="@dimen/st_order_line_name_size"
+                round_tv_attrs:round_tv_corner_size="@dimen/st_order_line_corner"
+                />
+
+            <TextView
+                android:id="@+id/tv_start_station_name"
+                style="@style/SingleTicketOrderOrderDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_order_detail_margin_left2"
+                android:layout_toRightOf="@+id/tv_start_line_name"
+                android:textSize="@dimen/st_order_detail_textsize4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/st_order_detail_height2"
+            android:layout_marginBottom="@dimen/st_order_detail_margin_top"
+            android:layout_marginTop="@dimen/st_order_detail_margin_top">
+
+            <TextView
+                android:id="@+id/end"
+                style="@style/SingleTicketOrderOrderDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/st_order_detail_end"
+                android:textSize="@dimen/st_order_detail_textsize3"/>
+
+            <com.whl.client.view.RoundTextView
+                android:id="@+id/tv_end_line_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/st_order_line_name_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_order_detail_margin_left"
+                android:layout_toRightOf="@+id/end"
+                android:gravity="center"
+                android:minWidth="@dimen/st_order_line_name_min_width"
+                android:paddingLeft="@dimen/st_order_line_name_padding"
+                android:paddingRight="@dimen/st_order_line_name_padding"
+                android:textColor="@color/FFFFFF"
+                android:textSize="@dimen/st_order_line_name_size"
+                round_tv_attrs:round_tv_corner_size="@dimen/st_order_line_corner"/>
+
+            <TextView
+                android:id="@+id/tv_end_station_name"
+                style="@style/SingleTicketOrderOrderDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_order_detail_margin_left2"
+                android:layout_toRightOf="@+id/tv_end_line_name"
+                android:textSize="@dimen/st_order_detail_textsize4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_one_ticket_price"
+        style="@style/SingleTicketOrderOrderDetailTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textSize="@dimen/st_order_detail_textsize2"/>
+</RelativeLayout>

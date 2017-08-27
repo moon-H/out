@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/personal_info_edit_user_head_img_large_size"
+            android:layout_height="@dimen/personal_info_edit_user_head_img_large_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/menu_img_margin_top"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_my_head"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img_head"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lly_info_view"
+                    style="@style/AppMenuItemStyle"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:layout_marginTop="@dimen/menu_btn_margin_top"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/menu_btn_height"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/menu_btn_txt_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_auth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/menu_btn_height"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/menu_btn_txt_size"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_btn_view"
+                    style="@style/AppMenuItemStyle"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:layout_marginTop="@dimen/menu_btn_margin_top"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="@dimen/menu_btn_width"
+                        android:layout_height="@dimen/menu_btn_height"
+                        android:background="@drawable/selector_login_btn"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/menu_btn_txt_size"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_personal_info"
+                style="@style/AppMenuItemStyle"
+                android:layout_marginTop="@dimen/menu_item_margin_top_large"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_personal"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_personal_info"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_panchan"
+                style="@style/AppMenuItemStyle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_money"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_panchan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_coupon"
+                style="@style/AppMenuItemStyle"
+
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_coupon"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_coupon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_my_order"
+                style="@style/AppMenuItemStyle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_order"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_order"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_inbox"
+                style="@style/AppMenuItemStyle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_message"/>
+
+                <FrameLayout
+                    android:layout_width="@dimen/inbox_width"
+                    android:layout_height="@dimen/common_widget_height"
+                    android:layout_marginLeft="@dimen/menu_txt_margin_left">
+
+                    <TextView
+                        android:id="@+id/tv_inbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:text="@string/inbox"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/menu_txt_size"/>
+
+                    <com.whl.client.view.MaterialBadgeTextView
+                        android:id="@+id/tv_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|right"
+                        android:layout_marginTop="@dimen/badge_margin_top"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/badge_text_size"
+                        app:mbtv_backgroundColor="@color/FD0001"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_share"
+                style="@style/AppMenuItemStyle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_share"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invite_friend_title"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_settings"
+                style="@style/AppMenuItemStyle"
+                android:layout_marginBottom="@dimen/menu_item_margin_top_middle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_item_margin_left"
+                    android:src="@drawable/icon_my_set"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_title"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_my"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

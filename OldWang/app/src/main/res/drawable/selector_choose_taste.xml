@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选择口味item背景-->
+    <item android:drawable="@drawable/btn_taste_sel" android:state_selected="true"/>
+    <item android:drawable="@drawable/btn_taste_nor"/>
+
+</selector>

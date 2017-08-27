@@ -1,0 +1,587 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="theme_dialog_alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FullscreenTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SpinnerActivityStyle" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_enter</item>
+    </style>
+
+    <style name="StylePersonalInfo">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/personal_info_text_size</item>
+    </style>
+
+    <style name="StylePersonalHintInfo">
+        <item name="android:textColorHint">@color/about_app_version</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/personal_info_text_size</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogActivityStyle" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_enter</item>
+    </style>
+
+    <style name="StyleBottomBarText">
+        <item name="android:textSize">@dimen/bottom_bar_text_size</item>
+        <item name="android:textColor">@color/bottom_text_nor</item>
+    </style>
+
+    <style name="InboxBottomBarText">
+        <item name="android:textSize">@dimen/bottom_bar_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="StyleSettings">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/setting_text_size</item>
+    </style>
+
+    <style name="change_pwd_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/pwd_edt_font_size</item>
+    </style>
+
+    <style name="StyleloginButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/login_btn_size</item>
+    </style>
+
+    <style name="RegistStepText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/step_text_size</item>
+    </style>
+
+    <style name="login_text_medium">
+        <item name="android:textColor">@color/login_page_text_color</item>
+    </style>
+
+    <style name="paymethod_style">
+        <item name="android:textColor">@color/login_input_text_color</item>
+        <item name="android:textSize">@dimen/login_text_size_medium</item>
+    </style>
+
+    <style name="ClearEdtCommonStyle" parent="@android:style/Widget.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textColor">@color/login_input_text_color</item>
+        <item name="android:textColorHint">@color/login_hint_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/edt_text_size</item>
+    </style>
+
+    <style name="search_service_edit_style">
+        <item name="android:textColor">@color/search_view_edit_textcolor</item>
+        <item name="android:textSize">@dimen/search_service_edit_text_size</item>
+    </style>
+
+    <style name="list_service_item_title_style">
+        <item name="android:textColor">@color/service_list_item_title</item>
+        <item name="android:textSize">@dimen/service_list_item_title_text_size</item>
+    </style>
+
+    <style name="list_service_item_info_style">
+        <item name="android:textColor">@color/service_list_item_info</item>
+        <item name="android:textSize">@dimen/service_list_item_info_text_size</item>
+    </style>
+
+    <style name="service_detail_name_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/service_detail_name_text_size</item>
+    </style>
+
+    <style name="service_detail_summary_style">
+        <item name="android:textColor">@color/service_list_item_info</item>
+        <item name="android:textSize">@dimen/service_detail_summary_text_size</item>
+    </style>
+
+    <style name="service_detail_info_style">
+        <item name="android:textColor">@color/service_list_item_info</item>
+        <item name="android:textSize">@dimen/service_detail_info_text_size</item>
+    </style>
+
+    <style name="my_service_item_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/setting_text_size</item>
+    </style>
+
+    <style name="my_service_item_hint_style">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/my_service_hint_text_size</item>
+    </style>
+
+    <style name="service_detail_btn_style">
+        <item name="android:textColor">@color/color_title_text</item>
+        <item name="android:textSize">@dimen/login_btn_size</item>
+    </style>
+
+    <style name="inbox_message_title_style">
+        <item name="android:textColor">@color/message_list_title_color</item>
+        <item name="android:textSize">@dimen/message_title_size</item>
+    </style>
+
+    <style name="inbox_message_date_style">
+        <item name="android:textColor">@color/message_date_color</item>
+        <item name="android:textSize">@dimen/message_date_size</item>
+    </style>
+
+    <style name="inbox_message_detail_title_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/inbox_message_title_text_size</item>
+    </style>
+
+    <style name="inbox_message_detail_date_style">
+        <item name="android:textColor">@color/message_detail_divider_color</item>
+        <item name="android:textSize">@dimen/inbox_message_date_text_size</item>
+    </style>
+
+    <style name="inbox_message_detail_content_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/inbox_message_content_text_size</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ani_in</item>
+        <item name="android:windowExitAnimation">@anim/ani_out</item>
+    </style>
+
+    <style name="MyServiceDetailTitle">
+        <item name="android:textSize">@dimen/my_service_detail_title_size</item>
+        <item name="android:textColor">@color/my_service_detail_title_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="SettingsIconStyle">
+        <item name="android:layout_marginTop">@dimen/setting_icon_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/setting_icon_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/common_horizontal_margin_large</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="SingleTicketOrderTabTextStyle">
+        <item name="android:textSize">@dimen/st_tab_text_size</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/st_order_text_nor</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="SingleTicketOrderTabIndicatorStyle">
+        <item name="android:src">@color/st_order_text_selected</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/st_tab_item_indicator_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="SingleTicketOrderTabParentStyle">
+        <item name="android:layout_width">@dimen/st_tab_item_width</item>
+        <item name="android:layout_height">@dimen/st_tab_height</item>
+    </style>
+
+    <style name="BookTicketByPriceTextStyle">
+        <item name="android:textSize">@dimen/st_price_text_size</item>
+        <item name="android:textColor">@color/_999999</item>
+    </style>
+
+    <style name="SingleTicketOrderItemTextStyle1">
+        <item name="android:textSize">@dimen/st_order_text_size1</item>
+        <item name="android:textColor">@color/st_order_price_text</item>
+    </style>
+
+    <style name="SingleTicketOrderItemTextStyle2">
+        <item name="android:textSize">@dimen/st_order_text_size1</item>
+        <item name="android:layout_marginLeft">@dimen/st_order_text_margin_left</item>
+        <item name="android:textColor">@color/st_order_item_text</item>
+    </style>
+
+    <style name="SingleTicketOrderOrderDetailTextStyle">
+        <item name="android:textColor">@color/st_order_detail_text1</item>
+    </style>
+
+    <style name="SingleTicketOrderDetailBgStyle">
+        <item name="android:background">@color/FFFFFF</item>
+    </style>
+
+    <style name="SingleTicketOrderDetailBtnStyle">
+        <item name="android:textSize">@dimen/st_order_btn_size</item>
+    </style>
+
+    <style name="GridViewItemStyle">
+        <item name="android:textSize">@dimen/gird_view_item_textsize</item>
+        <item name="android:textColor">@color/my_service_detail_title_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ConnBreceletTextStyle">
+        <item name="android:textSize">@dimen/picture_pull_to_refresh_loading_text_size</item>
+        <item name="android:textColor">@color/conn_bracelet_text</item>
+    </style>
+
+    <style name="FindBreceletTextStyle">
+        <item name="android:textSize">@dimen/picture_pull_to_refresh_loading_text_size</item>
+        <item name="android:textColor">@color/pull_to_refresh_loading_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BlueDeviceRecordTextStyle">
+        <item name="android:textSize">@dimen/wristband_balance_textsize</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="WridtbandItemOrderIdTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_order_id_textsize</item>
+        <item name="android:textColor">@color/wristband_order_item_order_id_color</item>
+    </style>
+
+    <style name="WridtbandItemOrderStatusTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_order_id_textsize</item>
+        <item name="android:textColor">@color/wristband_order_item_order_status_color</item>
+    </style>
+
+    <style name="WridtbandItemOrderDeviceNameTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_device_name_textsize</item>
+        <item name="android:textColor">@color/wristband_order_item_order_id_color</item>
+    </style>
+
+    <style name="WridtbandItemOrderDateTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_device_name_textsize</item>
+        <item name="android:textColor">@color/about_app_version</item>
+    </style>
+
+    <style name="WridtbandItemOrderAmountTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_order_amount_textsize</item>
+        <item name="android:textColor">@color/wristband_order_item_order_amount_color</item>
+    </style>
+
+    <style name="WridtbandItemOrderBtnTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_order_id_textsize</item>
+        <item name="android:textColor">@color/color_title_bg</item>
+    </style>
+
+    <style name="WridtbandItemOrderBtnPayTextStyle">
+        <item name="android:textSize">@dimen/wristband_order_item_order_id_textsize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="orderhandcharge">
+        <item name="android:textSize">@dimen/wristband_order_item_order_id_textsize</item>
+        <item name="android:textColor">@color/_666666</item>
+    </style>
+
+    <style name="orderdetail">
+        <item name="android:textSize">@dimen/order_detail_txt_size</item>
+        <item name="android:textColor">@color/_666666</item>
+    </style>
+
+    <style name="order_total">
+        <item name="android:textSize">@dimen/order_content_text</item>
+        <item name="android:textColor">@color/_666666</item>
+    </style>
+
+    <style name="order_total_btn">
+        <item name="android:layout_marginTop">@dimen/margin_14</item>
+        <item name="android:layout_width">@dimen/margin_84</item>
+        <item name="android:layout_height">@dimen/margin_24</item>
+    </style>
+
+    <style name="MyPostTextStyle">
+        <item name="android:textColor">@color/line_color</item>
+        <item name="android:textSize">@dimen/my_post_text_size</item>
+    </style>
+
+    <style name="tabStyle">
+        <item name="android:textColor">@drawable/tab_font_color</item>
+        <item name="android:textSize">@dimen/my_post_text_size</item>
+    </style>
+
+    <style name="CheckInTextStyle">
+        <item name="android:textColor">@color/line_color</item>
+        <item name="android:textSize">@dimen/sign_text_size</item>
+    </style>
+
+    <style name="PointsTextStyle">
+        <item name="android:textColor">@color/line_color</item>
+        <item name="android:textSize">@dimen/points_text_size</item>
+    </style>
+
+    <style name="PersonalInfoEdit_ItemLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/personal_info_edit_item_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/personal_info_edit_item_padding_left</item>
+        <item name="android:paddingRight">@dimen/personal_info_edit_item_padding_left</item>
+    </style>
+
+    <style name="PersonalInfoEdit_TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/personal_nickname_textsize</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="PersonalInfoEdit_EditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">@dimen/personal_info_edit_text_margin_left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/personal_edit_line_color</item>
+        <item name="android:textSize">@dimen/personal_nickname_textsize</item>
+        <item name="android:enabled">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PersonalInfoEdit_LineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/personal_edit_line_color</item>
+    </style>
+
+    <style name="Posted_EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/personal_info_edit_item_padding_left</item>
+        <item name="android:layout_marginRight">@dimen/personal_info_edit_item_padding_left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/post_date_text_color</item>
+        <item name="android:textSize">@dimen/personal_nickname_textsize</item>
+    </style>
+
+    <style name="NickNameTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/personal_nickname_textsize</item>
+    </style>
+
+    <style name="PersonalInfoEditViewStyle">
+        <item name="android:layout_width">@dimen/personal_info_edit_width</item>
+        <item name="android:layout_height">@dimen/personal_info_edit_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/personal_info_edit_padding_left</item>
+        <item name="android:paddingRight">@dimen/personal_info_edit_padding_left</item>
+    </style>
+
+    <style name="PersonalInfoTextStyle" parent="NickNameTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/personal_info_edit_margin_left</item>
+    </style>
+
+    <style name="PersonalInfoLineStyle">
+        <item name="android:layout_width">@dimen/personal_info_edit_width</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MyPostListItemTextStyle">
+        <item name="android:textColor">@color/_333333</item>
+        <item name="android:textSize">@dimen/my_post_text_size</item>
+    </style>
+
+    <style name="MyPostDetailUserTagTextStyle">
+        <item name="android:textColor">@color/color_title_bg</item>
+        <item name="android:textSize">@dimen/my_post_date_size</item>
+    </style>
+
+    <style name="MyPostListItemTagTextStyle">
+        <item name="android:textColor">@color/color_title_bg</item>
+        <item name="android:textSize">@dimen/my_post_tag_size</item>
+    </style>
+
+    <style name="MyPostListItemDateTextStyle">
+        <item name="android:textColor">@color/_666666</item>
+        <item name="android:textSize">@dimen/my_post_date_size</item>
+    </style>
+
+    <style name="MyPostEmptyTextStyle">
+        <item name="android:textColor">@color/line_color</item>
+        <item name="android:textSize">@dimen/empty_text_size</item>
+    </style>
+
+    <style name="MyPostDetailTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/post_detail_title_text_size</item>
+    </style>
+
+    <style name="MyPostDetailDateTextStyle">
+        <item name="android:textColor">@color/post_date_text_color</item>
+        <item name="android:textSize">@dimen/my_post_date_size</item>
+    </style>
+
+    <style name="MyPostDetailCotentTextStyle">
+        <item name="android:textColor">@color/bottom_text_nor</item>
+        <item name="android:textSize">@dimen/points_text_size</item>
+    </style>
+
+    <style name="MyPostListItemFloorTextStyle">
+        <item name="android:textColor">@color/bottom_text_nor</item>
+        <item name="android:textSize">@dimen/my_post_date_size</item>
+    </style>
+
+    <style name="MyPostListItemReplyContentTextStyle">
+        <item name="android:textColor">@color/bottom_text_nor</item>
+        <item name="android:textSize">@dimen/points_text_size</item>
+    </style>
+
+    <style name="MyTransparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/xml_seat_shape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:layout_marginLeft">@dimen/menu_txt_margin_left</item>
+        <item name="android:textColor">@color/_333333</item>
+        <item name="android:textSize">@dimen/menu_txt_size</item>
+    </style>
+
+    <style name="BlankActivityTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="OrderDialogWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/order_dialog__scale_enter</item>
+        <item name="android:windowExitAnimation">@anim/order_dialog__scale_exit</item>
+    </style>
+
+    <style name="OrderConditionDialogStyle" parent="DialogTheme">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+
+    <style name="AppStartLoad">
+        <item name="android:windowBackground">@drawable/skf_start</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SelectPhotoPopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/activity_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_translate_out</item>
+    </style>
+
+    <style name="AppMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menu_item_height_small</item>
+    </style>
+
+    <style name="NewConfirmBtnStyle">
+        <item name="android:layout_width">@dimen/buy_ticket_by_station_btn_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/buy_ticket_by_station_btn_text_size</item>
+        <item name="android:background">@drawable/selector_btn_pay</item>
+        <item name="android:paddingTop">@dimen/buy_ticket_by_station_btn_text_margin_top</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BuyTicketByPriceStyle1">
+        <item name="android:layout_marginLeft">@dimen/buy_ticket_by_price_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/buy_ticket_by_price_horizontal_margin</item>
+
+    </style>
+
+    <style name="CoffeeTakeMealDialogStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CoffeeSelectTasteDialogStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CoffeeShoppingCartStyle" parent="android:Animation">
+        <!--<item name="@android:windowEnterAnimation">@anim/coffee_shopping_cart_enter</item>-->
+        <item name="@android:windowExitAnimation">@anim/coffee_shopping_cart_exit</item>
+    </style>
+
+</resources>

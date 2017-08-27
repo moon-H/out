@@ -1,0 +1,24 @@
+package com.whl.client.gateway.model;
+
+public class PayChannel {
+	private String channelCode;
+	private String channelName;
+	public String getChannelCode() {
+		return channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
+	}
+	public String getChannelName() {
+		return channelName;
+	}
+	public void setChannelName(String channelName) {
+		this.channelName = channelName;
+	}
+	@Override
+	public String toString() {
+		return "PayChannel [channelCode=" + channelCode + ", channelName="
+				+ channelName + "]";
+	}
+	
+}

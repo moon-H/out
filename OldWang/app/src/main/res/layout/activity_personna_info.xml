@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EEEEEE"
+    android:orientation="vertical">
+
+    <com.whl.client.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false"/>
+
+    <LinearLayout
+        android:id="@+id/lly_user_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_edit_user_head_height"
+        android:background="@drawable/selector_settings_bg3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/StyleSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_text_margin_left"
+            android:layout_weight="1"
+            android:text="@string/edit_user_head"/>
+
+        <ImageView
+            android:id="@+id/img_user_head"
+            android:layout_width="@dimen/personal_info_edit_user_head_img_height"
+            android:layout_height="@dimen/personal_info_edit_user_head_img_height"
+            android:layout_marginRight="@dimen/personal_info_edit_user_head_img_margin_right"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_item_line"
+        android:background="@color/select_result_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_register_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginTop="@dimen/setting_version_margin_top"
+        android:background="@drawable/selector_settings_bg3"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_item_line"
+                android:layout_alignParentTop="true"
+                android:background="@color/select_result_line"/>
+
+            <TextView
+                android:id="@+id/tv_register_phone"
+                style="@style/StyleSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                android:text="@string/register_number"
+                android:textSize="@dimen/setting_text_size"/>
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                style="@style/StyleSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                android:text=""
+                android:textSize="@dimen/setting_text_size"/>
+
+            <ImageView
+                android:id="@+id/ic_bind_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/setting_arrow_margin_right"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_item_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/setting_text_margin_left"
+                android:background="@color/select_result_line"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.whl.client.view.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showBack="false"
+            app:showMenu="false" />
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logo_margin_top_resetpwd"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_login_top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/reset_pwd_height"
+            android:layout_marginLeft="@dimen/login_input"
+            android:layout_marginRight="@dimen/login_input"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.whl.client.view.ClearEditText
+                android:id="@+id/edittext_mobile"
+                style="@style/change_pwd_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:gravity="left|center_vertical"
+                android:hint="@string/reset_pwd_mobile"
+                android:inputType="number"
+                android:textColorHint="@color/login_hint_color"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_line"
+            android:layout_marginRight="@dimen/margin_line"
+            android:background="@color/search_view_edit_textcolor" />
+
+        <Button
+            android:id="@+id/btn_find_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_btn_height"
+            android:layout_marginLeft="@dimen/login_input"
+            android:layout_marginRight="@dimen/login_input"
+            android:layout_marginTop="@dimen/service_detail_card_number_height"
+            android:background="@drawable/selector_login_btn"
+            android:gravity="center"
+            android:text="@string/reset_find_pwd"
+            android:textColor="@color/color_title_text"
+            android:textSize="@dimen/login_btn_size" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/service_detail_card_number_height"
+            android:text="@string/back"
+            android:textColor="@color/login_page_text_color"
+            android:textSize="@dimen/login_btn_size" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progressView"
+        layout="@layout/progressbar_inverse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

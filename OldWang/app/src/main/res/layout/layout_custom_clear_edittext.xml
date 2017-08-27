@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/edt_input"
+        style="@style/ClearEdtCommonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_text_margin_left"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"/>
+
+    <CheckBox
+        android:id="@+id/chk_show_truth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_margin_horizontal"
+        android:button="@drawable/selector_show_truth"
+        android:checked="false"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/delete_ic_margin_right">
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_delete"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_allpage_prompt"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

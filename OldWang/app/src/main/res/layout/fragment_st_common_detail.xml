@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lly_pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/st_order_detail_height3"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_pay"/>
+
+        <TextView
+            style="@style/SingleTicketOrderDetailBgStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/st_order_detail_margin_left3"
+            android:text="@string/pay_success"
+            android:textColor="@color/st_order_item_text"
+            android:textSize="@dimen/st_order_detail_textsize1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/SingleTicketOrderDetailBgStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/st_order_detail_height">
+
+        <TextView
+            style="@style/SingleTicketOrderOrderDetailTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_right"
+            android:text="@string/st_order_num"
+            android:textSize="@dimen/st_order_detail_textsize1"/>
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            style="@style/SingleTicketOrderOrderDetailTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:textSize="@dimen/st_order_detail_textsize2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/st_order_detail_margin_top2"
+        android:background="@color/F6F6F6">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:src="@color/st_order_detail_line"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:src="@color/st_order_detail_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/SingleTicketOrderDetailBgStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/st_order_detail_height">
+
+        <TextView
+            style="@style/SingleTicketOrderOrderDetailTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:text="@string/st_order_detail_singleticket"
+            android:textSize="@dimen/st_order_detail_textsize1"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_count"
+            style="@style/SingleTicketOrderOrderDetailTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_left"
+            android:textSize="@dimen/st_order_detail_textsize2"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/SingleTicketOrderDetailBgStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin_right"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:src="@color/st_order_detail_line"/>
+
+        <include layout="@layout/layout_st_order_station_info"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/EEEEEE"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/home_tab_item_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="@dimen/service_detail_img_width"
+                android:layout_height="@dimen/service_detail_img_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/service_detail_info_text_margin_top"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                style="@style/service_detail_info_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_info_text_margin_top"
+                android:lineSpacingExtra="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/lly_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_add_btn_margin_top"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_user_tnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_rember_pwd"
+                    android:checked="false"/>
+
+                <TextView
+                    style="@style/login_text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_remember_margin_left"
+                    android:text="@string/user_tnc"
+                    android:textColor="@color/conn_bracelet_text"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    style="@style/login_text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_remember_margin_left"
+                    android:text="@string/sp_service_clause"
+                    android:textColor="@color/register_tnc"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/service_detail_info_padding"
+                android:layout_marginLeft="@dimen/service_detail_common_margin"
+                android:layout_marginRight="@dimen/service_detail_common_margin"
+                android:layout_marginTop="@dimen/service_detail_clause_margin_top"
+
+                android:gravity="center"
+                android:textColor="@color/color_title_text"
+                android:textSize="@dimen/login_btn_size"/>
+            <!--android:layout_marginBottom="@dimen/service_detail_box_margin_bottom"-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

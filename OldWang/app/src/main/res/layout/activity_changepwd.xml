@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud"
+        android:orientation="vertical">
+
+        <com.whl.client.view.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showBack="false"
+            app:showMenu="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:layout_marginTop="@dimen/pwd_margin_top"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pwd_box_height"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_org_pwd"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textPassword"
+                        android:hint="@string/input_org_pwd"
+                        app:showTruth="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/search_view_edit_textcolor" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pwd_box_height"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_new_pwd"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textPassword"
+                        android:hint="@string/input_new_pwd"
+                        app:showTruth="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/search_view_edit_textcolor" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/pwd_box_height"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.whl.client.view.ClearEditText
+                        android:id="@+id/edt_pwd_confirm"
+                        style="@style/ClearEdtCommonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textPassword"
+                        android:hint="@string/input_new_pwd_again"
+                        app:showTruth="true"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/search_view_edit_textcolor" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_change_pwd"
+                style="@style/StyleloginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/register_btn_height"
+                android:layout_marginTop="@dimen/search_service_view_height"
+                android:background="@drawable/selector_login_btn"
+                android:text="@string/make_sure" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progressView"
+        layout="@layout/progressbar_inverse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

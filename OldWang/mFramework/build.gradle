@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources true
+//            proguardFile getDefaultProguardFile('proguard-android.txt')
+//            proguardFile 'proguard-project.txt'
+
+//            libraryVariants.all { variant ->
+//                if (variant.buildType.name == 'release') {
+//                    variant.outputs.each { output ->
+//                        def outputFile = output.outputFile
+//                        if (outputFile != null && outputFile.name.endsWith('release.aar')) {
+//                            def fileName = "${appName()}_${android.defaultConfig.versionName}_${releaseTime()}"
+//                            def outputPath = "../output/aar"
+//                            //默认输出目录
+//                            output.outputFile = new File(output.outputFile.getParent(), fileName + ".aar")
+////                            output.outputFile = new File(outputPath, fileName + ".aar")//输出至指定目录
+//                        }
+//                    }
+//                }
+//            }
+        }
+
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+8"))
+}
+
+def appName() {
+    return "CssFramework"
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+}

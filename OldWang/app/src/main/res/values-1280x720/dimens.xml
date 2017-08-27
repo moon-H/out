@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- change pwd -->
+    <!-- share -->
+    <dimen name="share_text_size">15sp</dimen>
+    <dimen name="share_text_margin">20dp</dimen>
+    <!-- register -->
+    <dimen name="get_verify_code_btn_width">105dp</dimen>
+    <dimen name="register_btn_height">40dp</dimen>
+    <!-- service detail -->
+    <dimen name="service_detail_btn_margin_bottom">20dp</dimen>
+    <!--margin_top-->
+    <dimen name="logo_margin_top">60dp</dimen>
+    <dimen name="logo_margin_top_resetpwd">60dp</dimen>
+
+    <dimen name="ticket_marginleft">25dp</dimen>
+    <dimen name="ticket_text_marginleft">10dp</dimen>
+    <dimen name="singleticket_station_marginleft">50dp</dimen>
+    <dimen name="singleticket_stationtext_marginleft">26dp</dimen>
+    <dimen name="singleticket_card_marginleft">25dp</dimen>
+    <dimen name="singleticket_line_marginleft">55dp</dimen>
+</resources>

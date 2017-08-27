@@ -1,0 +1,20 @@
+打包命令 ： gradlew clean assembleHomePagedev //HomePage 代表渠道，dev代表环境
+
+## BuyTicketByStationActivity  BuyTicketByStationFragment 购票信息页面，选择起点、终点后进入此页面
+## BuyTicketByPriceActivity 通过固定票价购票
+## EntryExitSuccessActivity   进站、出站成功页面
+## STPaySuccessActivity 支付成功页面
+## QRCodeTicketPassGateActivity 电子单程票二维码页面、刷码进出站页面
+## STGetTicketActivity 取票二维码页面
+## STGetTicketCompleteActivity 取票成功页面
+## StationDetailActivity 站点详情页面，显示进出口，周边公交站等信息 StationGateFragment--进出口页面 StationBusInfoFragment--附近公交站页面
+## STMapFragment 路网图页面
+
+## BrowserActivity 浏览器页面,用于打开各种网页
+
+## InviteFriendActivity 邀请好友页面
+
+---论坛 start---
+TopicDetailActivity 帖子详情页面
+BBSHomeFragment TopicListFragment 论坛主页
+---论坛 end---

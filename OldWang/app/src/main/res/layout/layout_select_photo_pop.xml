@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lly_pop_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bbs_select_photo_menu_item_height"
+            android:gravity="center"
+            android:text="@string/take_photo"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/bbs_select_photo_menu_item_text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_select_albums"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bbs_select_photo_menu_item_height"
+            android:gravity="center"
+            android:text="@string/select_from_album"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/bbs_select_photo_menu_item_text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bbs_select_photo_menu_item_text_margin_top"
+            android:background="@color/E0E0E0"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bbs_select_photo_menu_item_height"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/bbs_select_photo_menu_item_text_size"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广州付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_cs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="长沙付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_xian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="西安付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_nanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="南宁付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_zhengzhou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="郑州付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_qingdao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="青岛付款"/>
+
+    <Button
+        android:id="@+id/btn_pay_guiyang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="贵阳付款"/>
+
+    <TextView
+        android:id="@+id/tv_pay_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:round_tv_attrs="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lly_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/st_select_result_item_height"
+        android:layout_marginLeft="@dimen/st_select_result_margin"
+        android:layout_marginRight="@dimen/st_select_result_margin"
+        android:background="@drawable/selector_search_result"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_select_result_icon_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_search"/>
+
+            <TextView
+                android:id="@+id/tv_step_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/st_select_result_icon_margin"
+                android:layout_toRightOf="@+id/icon"
+                android:textColor="@color/select_line_station_name"
+                android:textSize="@dimen/st_station_name_size"/>
+
+            <com.whl.client.view.RoundTextView
+                android:id="@+id/tv_line_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/st_select_result_line_name_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/st_select_result_line_name_margin_right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/st_select_result_line_name_padding"
+                android:paddingRight="@dimen/st_select_result_line_name_padding"
+                android:textColor="@color/select_result_linename"
+                android:textSize="@dimen/st_station_name_size"
+                round_tv_attrs:round_tv_corner_size="@dimen/st_order_line_corner"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/img_divider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/st_select_result_margin"
+            android:layout_marginRight="@dimen/st_select_result_margin"
+            android:src="@color/select_result_line"/>
+    </RelativeLayout>
+</RelativeLayout>

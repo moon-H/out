@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- change pwd -->
+    <!-- share -->
+    <dimen name="share_text_size">15sp</dimen>
+    <dimen name="share_text_margin">20dp</dimen>
+    <!-- regist -->
+    <dimen name="get_verify_code_btn_width">105dp</dimen>
+    <!-- service detail -->
+    <dimen name="service_detail_btn_margin_bottom">20dp</dimen>
+
+</resources>

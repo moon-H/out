@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_detail"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/common_margin_right"
+              android:layout_marginRight="@dimen/common_margin_right"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order2"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/order_detail_vt_margin1"
+        android:paddingLeft="@dimen/order_detail_hr_margin"
+        android:paddingRight="@dimen/order_detail_hr_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/st_order_num2"/>
+
+            <TextView
+                android:id="@+id/order_number"
+                style="@style/orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lly_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/order_detail_vt_margin2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_name"/>
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                style="@style/orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/order_detail_vt_margin2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_time"/>
+
+            <TextView
+                android:id="@+id/tv_pay_time"
+                style="@style/orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_refund_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/order_detail_vt_margin2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rufund_time"/>
+
+            <TextView
+                android:id="@+id/tv_refund_time"
+                style="@style/orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_order3"/>
+</LinearLayout>

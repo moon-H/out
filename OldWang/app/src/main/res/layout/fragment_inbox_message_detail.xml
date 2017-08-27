@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/messageTitle"
+            style="@style/inbox_message_detail_title_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inbox_message_margin_top"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/messageDate"
+            style="@style/inbox_message_detail_date_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inbox_message_content_padding"
+            android:layout_marginTop="@dimen/inbox_message_margin_top"
+            android:gravity="left" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/messageContent"
+                style="@style/inbox_message_detail_content_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/inbox_message_content_padding"
+                android:layout_marginRight="@dimen/inbox_message_content_padding"
+                android:layout_marginTop="@dimen/inbox_message_content_padding"
+                android:background="@drawable/rectangle_inbox_detail_bg"
+                android:gravity="left"
+                android:minHeight="100dp"
+                android:padding="@dimen/inbox_message_content_padding" />
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar_inverse"
+        android:visibility="gone" />
+
+</FrameLayout>

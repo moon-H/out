@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/SingleTicketOrderDetailBgStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.whl.client.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBack="true"
+        app:showMenu="false"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_img_margin_top"
+                android:src="@drawable/icon_pay"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_img_margin_top2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/pay_success_line_width"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/CCCCCC"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_line_margin_left"
+                    android:text="@string/pay_success"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/pay_success_title_text_size"/>
+
+                <ImageView
+                    android:layout_width="@dimen/pay_success_line_width"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_marginLeft="@dimen/pay_success_line_margin_left"
+                    android:background="@color/CCCCCC"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/order_number"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/pay_success_text_size1"/>
+
+                <TextView
+                    android:id="@+id/tv_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/lable_order_number"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/pay_success_text_size2"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/st_start_station"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/pay_success_text_size1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@id/tv_start_label"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <com.whl.client.view.RoundLineNameView
+                        android:id="@+id/tv_start_line"
+                        android:layout_width="@dimen/buy_ticket_by_station_line_text_width"
+                        android:layout_height="@dimen/buy_ticket_by_station_line_text_width"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/st_order_line_name_size"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/pay_success_text_size2"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rly_end_line_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_end_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/st_end_station2"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/pay_success_text_size1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/tv_end_label"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.whl.client.view.RoundLineNameView
+                        android:id="@+id/tv_end_line"
+                        android:layout_width="@dimen/buy_ticket_by_station_line_text_width"
+                        android:layout_height="@dimen/buy_ticket_by_station_line_text_width"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/st_order_line_name_size"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/pay_success_text_size2"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/st_order_order_time"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/pay_success_text_size1"/>
+
+
+                <TextView
+                    android:id="@+id/tv_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/label_time"
+                    android:textSize="@dimen/pay_success_text_size1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginRight="@dimen/pay_success_bloc_margin_left"
+                android:layout_marginTop="@dimen/pay_success_text_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/st_order_pay_time"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/pay_success_text_size1"/>
+
+                <TextView
+                    android:id="@+id/tv_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left"
+                    android:layout_toRightOf="@+id/label_pay_time"
+                    android:textSize="@dimen/pay_success_text_size1"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_dot_line_margin_top"
+                android:src="@drawable/imaginary_line"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_amount_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/st_pay_amount2"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/pay_success_text_size2"/>
+
+                <TextView
+                    android:id="@+id/tv_pay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_success_text_margin_left2"
+                    android:textColor="@color/FF5705"
+                    android:textSize="@dimen/pay_success_amount_text_size"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/NewConfirmBtnStyle"
+                android:layout_marginTop="@dimen/pay_success_btn_margin_top"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

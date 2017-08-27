@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_F4F3F4"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/home_tab_item_height">
+    <!--轮播图相关开始-->
+    <com.whl.client.coffee.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/coffee_F4F3F4"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frl_event"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/coffee_banner_height"
+                android:background="@color/coffee_F4F3F4">
+
+                <com.cssweb.shankephone.coffee.view.viewpager.LoopViewPager
+                    android:id="@+id/vp_advertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+
+                <com.cssweb.shankephone.coffee.view.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/coffee_banner_indicator_height"
+                    android:layout_gravity="bottom|center"
+                    android:paddingTop="2dp" />
+            </FrameLayout>
+            <!--轮播图相关结束-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/coffee_shop_list_margin_top"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </com.whl.client.coffee.ptr.PtrClassicFrameLayout>
+</LinearLayout>
